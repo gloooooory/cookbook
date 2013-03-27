@@ -1,0 +1,305 @@
+= Dart Cookbook
+:author: Shailen Tuli
+:encoding: UTF-8
+
+== Lists
+
+=== Creating a fixed length list
+
+==== Problem
+
+You want to create a list but don't want to allow it's size to be
+changed.
+
+==== Solution
+
+Pass the list size as an argument to the List constructor. This creates a
+fixed-length list:
+
+--------------------------------------------------------------------------------
+var fixedList = new List(3); // fixedList can have exactly 3 items.
+--------------------------------------------------------------------------------
+
+You cannot change the size of the list:
+
+--------------------------------------------------------------------------------
+fixedList.add(2);       // UnsupportedError
+fixedList.removeLast(); // UnsupportedError
+fixedList.length = 10;  // UnsupportedError
+--------------------------------------------------------------------------------
+
+You _can_ change the values of list elements:
+
+--------------------------------------------------------------------------------
+fixedList[0] = 'red';
+fixedList[1] = 'green';
+fixedList[2] = 'blue';
+print(fixedList); // ['red', 'green', 'blue']
+--------------------------------------------------------------------------------
+
+
+=== Creating an immutable List
+
+==== Problem
+
+Because you want to protect your data from being accidentally overwritten, you
+want to use a list that cannot be changed after it is created.  You don't want
+anyone to be able to modify list elements, add new elements, or remove
+existing elments.
+
+==== Solution
+
+Create an immutable list using the reserved word 'const':
+
+--------------------------------------------------------------------------------
+const List<String> vowels = const ['A', 'E', 'I', 'O', 'U'];
+--------------------------------------------------------------------------------
+
+A list constructed using const is a compile-time constant. Each element of a
+const list must also be a compile-time constant.
+
+--------------------------------------------------------------------------------
+const List<String> vowels = const ['A', 'E', 'I', 'O', 'U'];
+const List<String> rgb = const ['R', 'G', 'B'];
+const List<List<String>> chars = const [vowels, rgb];
+--------------------------------------------------------------------------------
+
+Attempting to use non-const values in a const list results in a compile-time
+error:
+
+--------------------------------------------------------------------------------
+// ILLEGAL.
+const List<List<String>> chars = const [
+    ['A', 'E', 'I', 'O', 'U'], ['R', 'G', 'B']];
+--------------------------------------------------------------------------------
+
+Once a const list is constructed, you cannot change its length:
+
+--------------------------------------------------------------------------------
+vowels.add('Y'); // UnsupportedError
+--------------------------------------------------------------------------------
+
+And, you cannot modify any list element:
+
+--------------------------------------------------------------------------------
+vowels[0] = 'a'; // UnsupportedError
+--------------------------------------------------------------------------------
+
+Two const lists are considered equal _and identical_ if they have the same
+length, and the same values in the same order. In other words, const lists are
+canonicalized:
+
+--------------------------------------------------------------------------------
+const List<String> colors = const ['R', 'G', 'B'];    
+const List<String> rgb    = const ['R', 'G', 'B']; 
+      
+colors == rgb;                   // true
+identical(colors, rgb);          // true
+colors.hashCode == rgb.hashCode; // true
+--------------------------------------------------------------------------------
+
+
+=== Creating a list and initializing it with default values
+
+==== Problem
+
+You want to create a new list and want to assign defalt values at every position
+when the list is created.
+
+==== Solution
+
+Use the `List.generate()` constructor. Pass it a function that generates the
+fill value: 
+
+--------------------------------------------------------------------------------
+var filledList = new List<bool>.generate(3, (_) => false);
+print(filledList); // [false, false, false]
+
+filledList.add(true);
+print(filledList); // [false, false, false, true]
+--------------------------------------------------------------------------------
+
+If you want a fixed-length list, set the optional `growable` argument to
+`false` (it is `true` by default):
+
+--------------------------------------------------------------------------------
+var fixedAndFilled = new List<bool>.generate(3, (_) => false, growable: false);
+--------------------------------------------------------------------------------
+
+You can generate fill values dynamically:
+
+--------------------------------------------------------------------------------
+List<List<int>> grid = new List.generate(3, (x) => [x, x + 1, x + 2]);
+--------------------------------------------------------------------------------
+
+The code above generates a 3 X 3 grid:
+
+--------------------------------------------------------------------------------
+print(grid); // [[0, 1, 2], [1, 2, 3], [2, 3, 4]]
+--------------------------------------------------------------------------------
+
+==== Discussion
+
+You will optionally use the `List.filled()` constructor to create a list and
+initialize it with default values:
+
+--------------------------------------------------------------------------------
+var filledList = new List<bool>.filled(3, false);
+print(filledList); // [false, false, false]
+--------------------------------------------------------------------------------
+
+The `List.filled()` constructor has two restrictions that `List.generate()`
+does not:
+
+- You can only create fixed-length lists.
+- You cannot dynamically generate fill values.
+
+If these restrictions are not important to your code, you can use
+`List.filled()` instead of `List.generate()`.
+
+
+=== Copying a list
+
+==== Problem
+
+You want to create a new list with the elements of another list.
+
+==== Solution
+
+Use the `List.from()` constructor and pass the original list as an argument:
+
+--------------------------------------------------------------------------------
+var fruit1 = ['orange', 'banana', 'mango'];
+var fruit2 = new List.from(fruit1);
+--------------------------------------------------------------------------------
+
+==== Discussion
+
+The `List.from()` constructor creates a new, independent list:
+
+--------------------------------------------------------------------------------
+identical(names, namesCopy); // false
+--------------------------------------------------------------------------------
+
+However, compound elements in the new list retain a reference to the original:
+
+--------------------------------------------------------------------------------
+var names = [{'first': 'Reggie', 'last': 'Jackson'}, 
+             {'first': 'Cy', 'last': 'Young'}];
+
+var namesCopy = new List.from(names);
+identical(names.first, namesCopy.first); // true
+--------------------------------------------------------------------------------
+
+Modifying an element in the original changes the corresponding element in the
+copy (and vise versa):
+
+--------------------------------------------------------------------------------
+names[0]['last'] = 'Jefferson';
+print(namesCopy[0]['last']); // 'Jefferson'
+--------------------------------------------------------------------------------
+
+Since the lists themselves do not share a reference, adding a new element to
+one does not affect the other:
+
+--------------------------------------------------------------------------------
+names.add({'first' : 'Micky', 'last' : 'Mantle'});
+names.length;     // 3
+namesCopy.length; // 2
+--------------------------------------------------------------------------------
+
+===== Fixed-length vs. flexible-length lists
+
+By default, the new list created will be growable. This is true even if you
+passed a `const` list as an argument to `List.from()`:
+
+--------------------------------------------------------------------------------
+const List<String> vowels1 = const ['A', 'E', 'I', 'O', 'U'];
+var vowels2 = new List.from(vowels1);
+
+vowels2.add('Y');
+print(vowels2); // ['A', 'E', 'I', 'O', 'U', 'Y']
+
+vowels2[0] = 'Y';
+print(vowels2[0]); // 'Y'
+--------------------------------------------------------------------------------
+
+To make the copy fixed-length, set `List.from()`s `growable` argument to
+`false`:
+
+--------------------------------------------------------------------------------
+const List<String> vowels1 = const ['A', 'E', 'I', 'O', 'U'];
+var vowelsFixed = new List.from(vowels1, growable: false);
+var fruitFixed = new List.from(fruit1, growable: false);
+--------------------------------------------------------------------------------
+
+You can then modify an element:
+--------------------------------------------------------------------------------
+vowelsFixed[0] = 'Y';
+print(vowelsFixed[0]); 'Y'
+--------------------------------------------------------------------------------
+
+But you cannot add or remove elements:
+
+--------------------------------------------------------------------------------
+vowelsFixed.add('Y');     // UnsupportedError
+vowelsFixed.removeLast(); // UnsupportedError
+--------------------------------------------------------------------------------
+
+
+=== Appending items to a list
+
+==== Problem
+
+You want to add items to the end of a list, and want to know the most
+efficient way to do so.
+
+==== Solution
+
+To add one item at a time to a list, use `add()`:
+
+--------------------------------------------------------------------------------
+var names = ['Seth', 'Timothy', 'John'];
+names.add('Kathy');
+names.add('Mary');
+print(names); // ['Seth', 'Timothy', 'John', 'Kathy', 'Mary']
+--------------------------------------------------------------------------------
+
+If the items to be added are already in a list, you can add them all at once
+using `addAll()`:
+
+--------------------------------------------------------------------------------
+var names = ['Seth', 'Timothy', 'John'];
+names.addAll(['Kathy', 'Mary']);
+print(names); // ['Seth', 'Timothy', 'John', 'Kathy', 'Mary']
+--------------------------------------------------------------------------------
+
+Or, you can increase the `length` property of a list. This generates
+additional entries that are initialized to null. 
+
+--------------------------------------------------------------------------------
+names.length += 2; // Creates 2 more null items.
+print(names);      // ['Seth', 'Timothy', 'John', null, null]
+--------------------------------------------------------------------------------
+
+You can then replace the `null` values with actual values:
+
+--------------------------------------------------------------------------------
+var names = ['Seth', 'Timothy', 'John'];
+var moreNames = ['Kathy', 'Mary'];
+      
+var oldLength = names.length;
+names.length += 2;
+      
+for (var i = 0; i < moreNames.length; i++) {
+  names[i + oldLength] = moreNames[i];
+}
+
+print(names); ['Seth', 'Timothy', 'John', 'Kathy', 'Mary']
+--------------------------------------------------------------------------------
+
+Appending items to a list by increasing the list length first is generally more
+efficient than using `add()` or `addAll()`.
+
+
+
