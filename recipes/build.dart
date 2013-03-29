@@ -7,6 +7,7 @@ void main() {
       'web/webui/two_way_data_binding/main.html',
       'web/webui/conditionals/main.html', 
       'web/webui/edit_form/main.html',
+      'web/webui/loop/main.html',
       ]);
 }
 

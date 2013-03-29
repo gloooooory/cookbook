@@ -3498,3 +3498,324 @@ build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=we
 Total time                                                   --  17 ms
 build.dart finished [434 ms]
 
+---
+build.dart --machine --changed=pubspec.lock
+Total time                                                   --  14 ms
+build.dart finished [386 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/main.html
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/edit_form/main.html","to":"web/webui/edit_form/out/main.html"}}]
+Total time spent on web/webui/one_way_data_binding/main.html -- 200 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  34 ms
+Total time spent on web/webui/conditionals/main.html         --  25 ms
+Total time spent on web/webui/edit_form/main.html            --  19 ms
+Total time                                                   -- 299 ms
+build.dart finished [699 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  15 ms
+build.dart finished [420 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/main.html
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/edit_form/main.html","to":"web/webui/edit_form/out/main.html"}}]
+Total time spent on web/webui/one_way_data_binding/main.html -- 192 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  25 ms
+Total time spent on web/webui/conditionals/main.html         --  21 ms
+Total time spent on web/webui/edit_form/main.html            --  18 ms
+Total time                                                   -- 275 ms
+build.dart finished [663 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  15 ms
+build.dart finished [455 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  14 ms
+build.dart finished [416 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  16 ms
+build.dart finished [458 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/out/main.html
+Total time                                                   --  14 ms
+build.dart finished [402 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/main.dart
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/edit_form/main.html","to":"web/webui/edit_form/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+Total time spent on web/webui/one_way_data_binding/main.html -- 184 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  25 ms
+Total time spent on web/webui/conditionals/main.html         --  20 ms
+Total time spent on web/webui/edit_form/main.html            --  19 ms
+Total time spent on web/webui/loop/main.html                 --  12 ms
+Total time                                                   -- 280 ms
+build.dart finished [700 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  16 ms
+build.dart finished [481 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/main.dart
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/edit_form/main.html","to":"web/webui/edit_form/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+Total time spent on web/webui/one_way_data_binding/main.html -- 179 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  24 ms
+Total time spent on web/webui/conditionals/main.html         --  20 ms
+Total time spent on web/webui/edit_form/main.html            --  18 ms
+Total time spent on web/webui/loop/main.html                 --  12 ms
+Total time                                                   -- 274 ms
+build.dart finished [677 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  32 ms
+build.dart finished [483 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/main.dart
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/edit_form/main.html","to":"web/webui/edit_form/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+Total time spent on web/webui/one_way_data_binding/main.html -- 189 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  25 ms
+Total time spent on web/webui/conditionals/main.html         --  21 ms
+Total time spent on web/webui/edit_form/main.html            --  19 ms
+Total time spent on web/webui/loop/main.html                 --  13 ms
+Total time                                                   -- 287 ms
+build.dart finished [679 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  15 ms
+build.dart finished [463 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/main.dart
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/edit_form/main.html","to":"web/webui/edit_form/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+Total time spent on web/webui/one_way_data_binding/main.html -- 182 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  25 ms
+Total time spent on web/webui/conditionals/main.html         --  21 ms
+Total time spent on web/webui/edit_form/main.html            --  20 ms
+Total time spent on web/webui/loop/main.html                 --  13 ms
+Total time                                                   -- 281 ms
+build.dart finished [670 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  18 ms
+build.dart finished [473 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/main.dart
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/edit_form/main.html","to":"web/webui/edit_form/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+Total time spent on web/webui/one_way_data_binding/main.html -- 182 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  27 ms
+Total time spent on web/webui/conditionals/main.html         --  20 ms
+Total time spent on web/webui/edit_form/main.html            --  19 ms
+Total time spent on web/webui/loop/main.html                 --  13 ms
+Total time                                                   -- 282 ms
+build.dart finished [675 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  15 ms
+build.dart finished [480 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/main.dart
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/edit_form/main.html","to":"web/webui/edit_form/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+Total time spent on web/webui/one_way_data_binding/main.html -- 181 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  24 ms
+Total time spent on web/webui/conditionals/main.html         --  20 ms
+Total time spent on web/webui/edit_form/main.html            --  18 ms
+Total time spent on web/webui/loop/main.html                 --  12 ms
+Total time                                                   -- 277 ms
+build.dart finished [669 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  15 ms
+build.dart finished [475 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/main.dart
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/edit_form/main.html","to":"web/webui/edit_form/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+Total time spent on web/webui/one_way_data_binding/main.html -- 182 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  24 ms
+Total time spent on web/webui/conditionals/main.html         --  20 ms
+Total time spent on web/webui/edit_form/main.html            --  19 ms
+Total time spent on web/webui/loop/main.html                 --  12 ms
+Total time                                                   -- 279 ms
+build.dart finished [685 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  15 ms
+build.dart finished [474 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/out/main.html --changed=web/webui/one_way_data_binding/out/main.h...
+Total time                                                   --  14 ms
+build.dart finished [463 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  17 ms
+build.dart finished [455 ms]
+
+---
+build.dart --machine --removed=web/webui/loop/out/main.html --removed=web/webui/loop/out/main.html.dart --remov...
+Total time                                                   --  13 ms
+build.dart finished [408 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  20 ms
+build.dart finished [502 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/main.html
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/edit_form/main.html","to":"web/webui/edit_form/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+Total time spent on web/webui/one_way_data_binding/main.html -- 192 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  25 ms
+Total time spent on web/webui/conditionals/main.html         --  20 ms
+Total time spent on web/webui/edit_form/main.html            --  18 ms
+Total time spent on web/webui/loop/main.html                 --  37 ms
+Total time                                                   -- 312 ms
+build.dart finished [712 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  17 ms
+build.dart finished [440 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/main.html
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/edit_form/main.html","to":"web/webui/edit_form/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+Total time spent on web/webui/one_way_data_binding/main.html -- 183 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  25 ms
+Total time spent on web/webui/conditionals/main.html         --  20 ms
+Total time spent on web/webui/edit_form/main.html            --  18 ms
+Total time spent on web/webui/loop/main.html                 --  47 ms
+Total time                                                   -- 313 ms
+build.dart finished [744 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  16 ms
+build.dart finished [453 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/main.html
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/edit_form/main.html","to":"web/webui/edit_form/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+Total time spent on web/webui/one_way_data_binding/main.html -- 204 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  25 ms
+Total time spent on web/webui/conditionals/main.html         --  20 ms
+Total time spent on web/webui/edit_form/main.html            --  19 ms
+Total time spent on web/webui/loop/main.html                 --  36 ms
+Total time                                                   -- 329 ms
+build.dart finished [742 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  16 ms
+build.dart finished [438 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/main.html
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/edit_form/main.html","to":"web/webui/edit_form/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+Total time spent on web/webui/one_way_data_binding/main.html -- 184 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  25 ms
+Total time spent on web/webui/conditionals/main.html         --  20 ms
+Total time spent on web/webui/edit_form/main.html            --  18 ms
+Total time spent on web/webui/loop/main.html                 --  40 ms
+Total time                                                   -- 308 ms
+build.dart finished [716 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  16 ms
+build.dart finished [428 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  17 ms
+build.dart finished [544 ms]
+
+---
+build.dart --machine --changed=web/webui/loop/main.html
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/edit_form/main.html","to":"web/webui/edit_form/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+Total time spent on web/webui/one_way_data_binding/main.html -- 183 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  25 ms
+Total time spent on web/webui/conditionals/main.html         --  20 ms
+Total time spent on web/webui/edit_form/main.html            --  18 ms
+Total time spent on web/webui/loop/main.html                 --  37 ms
+Total time                                                   -- 304 ms
+build.dart finished [718 ms]
+
+---
+build.dart --machine --changed=web/webui/conditionals/out/main.html --changed=web/webui/conditionals/out/main.h...
+Total time                                                   --  17 ms
+build.dart finished [439 ms]
+
