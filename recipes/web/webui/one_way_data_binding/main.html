@@ -2,13 +2,12 @@
 
 <html>
   <body>
-  <div><em>{{ quote.quote }}</em>- {{ quote.saidBy }}</div>
+  <div><em>{{ quote.quote }}</em> - {{ quote.saidBy }}</div>
   
   <script src="packages/browser/dart.js"></script>
   <script type="application/dart">
     
     import 'dart:async';
-    import 'dart:math';
     
     class Quote {
       String quote, saidBy; 
@@ -19,21 +18,22 @@
     var quote;
     
     
-    main() {
+    void main() {
        List<Quote> quotes = [
          new Quote('This agression will not stand, man.', 'The Dude'),
-         new Quote('The rug really tied the room together.', 'The Dude'),
          new Quote('You are entering a world of pain', 'Walter'),
-         new Quote('The dude minds', 'The Dude'),
-         new Quote('...in the parlance of our time', 'Maude')];
+         new Quote('The rug really tied the room together.', 'The Dude'),
+         new Quote('Mark it zero, dude', 'Walter')
+         ];
         
-       quote = quotes.first;
+       var i = 0;
+       quote = quotes[i];
        
        new Timer.periodic(new Duration(milliseconds:3000), (_) {
-         quote = quotes[new Random().nextInt(quotes.length)];
-       });   
-    }
-    
+         i = (i == quotes.length - 1) ? 0 : i + 1;
+         quote = quotes[i];
+       });
+     }
   </script>
 </body>
 </html>

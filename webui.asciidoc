@@ -1,0 +1,61 @@
+= Dart Cookbook
+:author: Shailen Tuli
+:encoding: UTF-8
+
+== Web UI
+
+=== Use Dart code within html
+
+==== Problem
+
+You want to inject the value of Dart identifiers and expressions in your
+markup.
+
+==== Solution
+
+Put valid Dart expressions within `{{ }}`.
+
+The Web UI framework evaluate the code inside `{{  }}` and injects the result
+into the markup. You can use identifiers, and call functions and methods:
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html>
+  <body>
+    
+  <div>
+    There are two ways to divide numbers in Dart. Assume:
+    <ul><li>x = {{ x }}</li><li>y = {{ y }}</li></ul>
+  </div>
+  
+  <div>Integer division: <ul><li>x ~/ y = {{ intDiv(x,y) }}</li></ul></div>
+    
+  <div>Double division: <ul> <li>x / y = {{ div(x,y) }}</li> </ul></div>
+  
+  <div>
+    You can write the number {{ x }} in a bunch of ways:
+    <ul>
+      <li>In binary: {{ x.toRadixString(2) }}</li>
+      <li>In octal: {{ x.toRadixString(8) }}</li>
+      <li>In hexadecimal: {{ x.toRadixString(16) }}</li>
+    </ul>
+  </div>
+    
+  
+  <script src="packages/browser/dart.js"></script>
+  <script type="application/dart">
+
+    var x = 32;
+    var y = 3;
+    
+    num div(x, y) => x / y;
+    num intDiv(x, y) => x ~/ y;
+    
+    void main() {}
+  </script>
+</body>
+</html>
+--------------------------------------------------------------------------------
+
+
