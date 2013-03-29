@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html><body>
+    <div><em>Title: </em>{{ post.title }}
+     <template instantiate="if !post.show">
+       <input type='button' value='Show post content' on-click="post.showBody()" />
+    </template>
+    
+    <template instantiate="if post.show">
+      <div><em>Body: </em>{{ post.body}}
+        <input type='button' value='Hide post content' on-click="post.hideBody()" />
+      </div>
+    </template>  
+  </div>
+  
+  <script type="application/dart">
+    
+    import 'package:web_ui/web_ui.dart';
+    
+    class Post {
+      String title, body;
+      
+      @observable
+      bool show = false;
+      Post(this.title, this.body);
+      
+      void showBody() {
+        show = true;
+      }
+      
+      void hideBody() {
+        show = false;
+      }
+    }
+    
+    Post post;
+    
+    main() {
+      post = new Post('I just discovered Dart!', 
+      '''And I am really liking it. I have been following the Dart project since
+      it started and it really looks like it is...''');
+    }
+  </script>
+</body></html>

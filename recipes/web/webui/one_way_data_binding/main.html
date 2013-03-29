@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+  <div><em>{{ quote.quote }}</em>- {{ quote.saidBy }}</div>
+  
+  <script src="packages/browser/dart.js"></script>
+  <script type="application/dart">
+    
+    import 'dart:async';
+    import 'dart:math';
+    
+    class Quote {
+      String quote, saidBy; 
+      Quote(this.quote, this.saidBy);
+    }
+    
+    @observable 
+    var quote;
+    
+    
+    main() {
+       List<Quote> quotes = [
+         new Quote('This agression will not stand, man.', 'The Dude'),
+         new Quote('The rug really tied the room together.', 'The Dude'),
+         new Quote('You are entering a world of pain', 'Walter'),
+         new Quote('The dude minds', 'The Dude'),
+         new Quote('...in the parlance of our time', 'Maude')];
+        
+       quote = quotes.first;
+       
+       new Timer.periodic(new Duration(milliseconds:3000), (_) {
+         quote = quotes[new Random().nextInt(quotes.length)];
+       });   
+    }
+    
+  </script>
+</body>
+</html>

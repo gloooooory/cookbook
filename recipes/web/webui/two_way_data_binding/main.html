@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+  <div>
+    Input:
+    <input type="text" bind-value="str" placeholder="type something here">
+    <div> You typed: {{str}}
+      <br />
+      <input on-click="upcase()" type='button' value='Click to upcase' />
+      <input on-click="downcase()" type='button' value='Click to downcase' />
+    </div>
+  </div>
+
+  <script type="application/dart">
+    
+    @observable
+    String str = '';
+    
+    void upcase() {
+      str = str.toUpperCase();
+    }
+ 
+    void downcase() {
+      str = str.toLowerCase();
+    }
+    
+    main() {}
+  </script>
+</body>
+</html>
