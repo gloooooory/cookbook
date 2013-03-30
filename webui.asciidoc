@@ -31,7 +31,7 @@ into the markup. You can use identifiers, and call functions and methods:
   
   <div>Integer division: <ul><li>x ~/ y = {{ intDiv(x,y) }}</li></ul></div>
     
-  <div>Double division: <ul> <li>x / y = {{ div(x,y) }}</li> </ul></div>
+  <div>Double division: <ul><li>x / y = {{ div(x,y) }}</li></ul></div>
   
   <div>
     You can write the number {{ x }} in a bunch of ways:
@@ -59,3 +59,255 @@ into the markup. You can use identifiers, and call functions and methods:
 --------------------------------------------------------------------------------
 
 
+=== Create a one-way data binding
+
+==== Problem
+
+You want to sync up a variable and its display. Every time the value of the
+variable changes, you want its display to auto-magically change without having
+to do any DOM manipulation.
+
+==== Solution
+
+Add an `@observable` declaration right before you define an object. This create
+a binding between that object and its display in the UI.
+
+--------------------------------------------------------------------------------
+@observable
+var x = 10;
+--------------------------------------------------------------------------------
+
+With the `@observable` declaration in place, every time the observed object gets
+a new value, its display gets updated without the need for a page refresh. You
+don't have to worry about any DOM manipulation. 
+
+Consider the code below for displaying a movie quote on a page. The `quote`
+variable stores the quote to display, and every time the value of `quote`
+changes, the UI updates.
+
+--------------------------------------------------------------------------------
+@observable 
+var quote;
+--------------------------------------------------------------------------------
+
+Here is the entire script:
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html>
+  <body>
+  <div><em>{{ quote.quote }}</em> - {{ quote.saidBy }}</div>
+  
+  <script type="application/dart">
+    
+    import 'dart:async';
+    
+    class Quote {
+      String quote, saidBy; 
+      Quote(this.quote, this.saidBy);
+    }
+    
+    // Create the binding. This is where the magic happens.
+    // Every time the value of quote changes, its display changes
+    // automatcially.
+    @observable 
+    var quote;
+      
+    void main() {
+       // Assemble a bunch of quotes.
+       List<Quote> quotes = [
+         new Quote('This agression will not stand, man.', 'The Dude'),
+         new Quote('You are entering a world of pain', 'Walter'),
+         new Quote('The rug really tied the room together.', 'The Dude'),
+         new Quote('Mark it zero, dude', 'Walter')
+       ];
+        
+       var i = 0;
+       quote = quotes[i];
+       
+       // Cycle throw the quotes, assigning a new item to the quote
+       // variable every three seconds.
+       new Timer.periodic(new Duration(milliseconds:3000), (_) {
+         i = (i == quotes.length - 1) ? 0 : i + 1;
+         quote = quotes[i];
+       });
+     }
+  </script>
+</body>
+</html>
+--------------------------------------------------------------------------------
+
+=== Create a two way data binding
+
+==== Problem
+
+You want to sync a variable and its display in the UI. If the variable
+changes, its display should also change, and if the display changes, the
+variable should also change.
+
+==== Solution
+
+Create a two-way binding between an object and its display. 
+
+First, make an object observable:
+
+--------------------------------------------------------------------------------
+@observable
+var someObject = '';
+--------------------------------------------------------------------------------
+
+Then, declare an explicit binding in the markup using the `bind-value=`
+syntax:
+
+--------------------------------------------------------------------------------
+<input type="text" bind-value="someObject">
+--------------------------------------------------------------------------------
+
+Build and run the script below to see the power of two-way data binding. 
+
+The variable `str` is made observable, and an input field is bound to it.
+Modify the contents of the input field, and the value of `str`
+resets. Modify `str` using one of the buttons provided, and the text inside
+the input field resets. There is no page refresh, and no need for any DOM
+manipualation. The data and its representation are fully synced up.
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html>
+  <body>
+  <div>
+    Input:
+
+    <!-- Text entered here is stored in the str variable -->
+    <input type="text" bind-value="str" placeholder="type something here">
+
+    <!-- Display value of str. Changes as the value of str changes.  -->
+    <div> You typed: {{str}}
+      <br />
+
+      <!-- Change str case. The UI updates automatically -->
+      <input on-click="upcase()" type='button' value='Click to upcase' />
+      <input on-click="downcase()" type='button' value='Click to downcase' />
+    </div>
+  <ediv>
+
+  <script type="application/dart">
+    
+    @observable
+    String str = '';
+    
+    void upcase() {
+      str = str.toUpperCase();
+    }
+ 
+    void downcase() {
+      str = str.toLowerCase();
+    }
+    
+    main() {}
+  </script>
+</body>
+</html>
+--------------------------------------------------------------------------------
+
+
+=== Selectively activate parts of the UI
+
+==== Problem
+
+How do you conditionally display parts of a page? Maybe you want to start off
+with only a small amount of content on a page, and display more content only if
+the user UI only if the user wants to see it.
+
+==== Solution
+
+Wrap a portion of the UI in a <template> tag and instantiate the template
+conditionally by using the following syntax:
+
+--------------------------------------------------------------------------------
+<div template instantiate="if displayItAll">
+--------------------------------------------------------------------------------
+
+Make the variable used in the conditional observable:
+
+--------------------------------------------------------------------------------
+@observable
+bool displayItAll = false;
+--------------------------------------------------------------------------------
+
+If the value of the observable variable changes to true, the conditional
+template activates.
+
+Shown below is code for displaying user records. The name of the user is
+always displayed. The full user record is displayed only if the 'Show full
+record' checkbox is checked.
+
+The conditional display is governed by the `showFull` boolean, which is made
+observable:
+
+--------------------------------------------------------------------------------
+@observable
+bool showFull = false;
+--------------------------------------------------------------------------------
+
+The checkbox is bound to the `showFull` boolean:
+
+--------------------------------------------------------------------------------
+<input type="checkbox" bind-checked="showFull">Show full record<br><br>
+--------------------------------------------------------------------------------
+
+When the checkbox is checked, `showFull` becomes `true`, and the conditional
+templates activate.
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html>
+  <body> 
+    <input type="checkbox" bind-checked="showFull">Show full record<br><br>
+
+    <div>{{record1.name}}</div>
+    <div template instantiate="if showFull">
+      Age: {{record1.age}}<br>
+      Phone: {{record1.phone}}<br>
+      Email: {{record1.email}}<br>                
+    </div><br>
+
+    <div>{{record2.name}}</div>
+    <div template instantiate="if showFull">
+      Age: {{record2.age}}<br>
+      Phone: {{record2.phone}}<br>
+      Email: {{record2.email}}<br>                
+    </div><br>
+
+    <div>{{record3.name}}</div>
+    <div template instantiate="if showFull">
+      Age: {{record3.age}}<br>
+      Phone: {{record3.phone}}<br>
+      Email: {{record3.email}}<br>                
+    </div>
+    
+    <script type="application/dart">
+      class Record {
+        String name, age, phone, email;
+        Record(this.name, this.age, this.phone, this.email);
+      }
+      
+      var record1 = new Record('John Doe', '34', '212-555-1234', 'john@jd.com');
+      var record2 = new Record('Mario Lark', '33', '510-454-4545', 'ml@ml.com');
+      var record3 = new Record('Paula Ho', '37', '617-555-4321', 'paula@ph.org');
+   
+      @observable
+      bool showFull = false;
+      
+      void main() {}
+    </script>
+  </body>
+</html>
+
+--------------------------------------------------------------------------------
+
+
+===
