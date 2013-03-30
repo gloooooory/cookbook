@@ -4,7 +4,6 @@
   <body>
   <div><em>{{ quote.quote }}</em> - {{ quote.saidBy }}</div>
   
-  <script src="packages/browser/dart.js"></script>
   <script type="application/dart">
     
     import 'dart:async';
@@ -14,10 +13,10 @@
       Quote(this.quote, this.saidBy);
     }
     
+    // Create the binding.
     @observable 
     var quote;
-    
-    
+      
     void main() {
        List<Quote> quotes = [
          new Quote('This agression will not stand, man.', 'The Dude'),

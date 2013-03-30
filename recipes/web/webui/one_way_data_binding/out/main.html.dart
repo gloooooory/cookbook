@@ -18,6 +18,7 @@ import 'dart:async';
       Quote(this.quote, this.saidBy);
     }
     
+    // Create the binding.
     final __changes = new __observe.Observable();
 
     dynamic __$quote;
@@ -34,8 +35,7 @@ import 'dart:async';
       }
       __$quote = value;
     }
-    
-    
+      
     void main() {
        List<Quote> quotes = [
          new Quote('This agression will not stand, man.', 'The Dude'),
