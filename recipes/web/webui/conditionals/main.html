@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 
-<html><body>
-    <div><em>Title: </em>{{ post.title }}
-     <template instantiate="if !post.show">
-       <input type='button' value='Show post content' on-click="post.showBody()" />
-    </template>
-    
-    <template instantiate="if post.show">
-      <div><em>Body: </em>{{ post.body}}
-        <input type='button' value='Hide post content' on-click="post.hideBody()" />
-      </div>
-    </template>  
+<html><body> 
+
+  <input type="checkbox" bind-checked="showFull">Show full record<br><br>
+
+  <div>{{record1.name}}</div>
+  <div template instantiate="if showFull">
+    Age: {{record1.age}}<br>
+    Phone: {{record1.phone}}<br>
+    Email: {{record1.email}}<br>                
+  </div><br>
+  <div>{{record2.name}}</div>
+  <div template instantiate="if showFull">
+    Age: {{record2.age}}<br>
+    Phone: {{record2.phone}}<br>
+    Email: {{record2.email}}<br>                
+  </div><br>
+  <div>{{record3.name}}</div>
+  <div template instantiate="if showFull">
+    Age: {{record3.age}}<br>
+    Phone: {{record3.phone}}<br>
+    Email: {{record3.email}}<br>                
   </div>
   
   <script type="application/dart">
-    
-    import 'package:web_ui/web_ui.dart';
-    
-    class Post {
-      String title, body;
-      
-      @observable
-      bool show = false;
-      Post(this.title, this.body);
-      
-      void showBody() {
-        show = true;
-      }
-      
-      void hideBody() {
-        show = false;
-      }
+    class Record {
+      String name, age, phone, email;
+      Record(this.name, this.age, this.phone, this.email);
     }
     
-    Post post;
+    var record1 = new Record('John Doe', '34', '212-555-1234', 'john@jd.com');
+    var record2 = new Record('Mario Lark', '33', '510-454-4545', 'ml@ml.com');
+    var record3 = new Record('Paula Ho', '37', '617-555-4321', 'paula@ph.org');
+ 
+    @observable
+    bool showFull = false;
     
-    main() {
-      post = new Post('I just discovered Dart!', 
-      '''And I am really liking it. I have been following the Dart project since
-      it started and it really looks like it is...''');
+    void main() {
+    
     }
+    
   </script>
 </body></html>
