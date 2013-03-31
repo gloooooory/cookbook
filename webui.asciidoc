@@ -310,4 +310,113 @@ templates activate.
 --------------------------------------------------------------------------------
 
 
-===
+=== XXX
+
+==== Problem
+
+You want to dynamically set the class attribute of an element to change its
+style properties.
+
+==== Solution
+
+Bind an element's class attributes to one or more variables. When the variables
+change, the class attributes update accordingly.
+
+The script below allows a user to set the font-size, the font-family and the
+general look of the page. The div that contains the page contents binds to
+variables that set the classes that affect the div's styles: 
+
+--------------------------------------------------------------------------------
+<div class="{{fontFamily}} {{fontSize}} {{generalLook}}">
+--------------------------------------------------------------------------------
+
+The binding is declared in the html using the `bind-value=` syntax:
+
+--------------------------------------------------------------------------------
+<input type="radio" value='sans-serif' bind-value="fontFamily">Sans-serif<br>
+...
+<input type="radio" value='small' bind-value="fontSize">Small<br>
+...
+<input type="radio" value='styled' bind-value="generalLook">Styled<br>
+...
+--------------------------------------------------------------------------------
+
+Here is the entire script. Build and run it, and play around with the page
+styles:
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      .menu {font-family: sans-serif}
+      .menu fieldset {width:200px; margin-left: 20px}
+      
+      .small  {font-size: .75em;}
+      .normal {font-size: 1em;}
+      .large {font-size: 1.35em;}
+      
+      .sans-serif {font-family: sans-serif}
+      
+      .styled p {font-weight: bold}
+      .styled ul {list-style: none; padding-left: 20px; width: 450px}
+      .styled ul li {border: 1px solid black; margin: 1px; padding:2px;}
+    </style>
+  </head>
+  
+  <body> 
+   <div class='menu'>
+     <h3>Set page styles:</h3>
+     
+     <fieldset>
+        <legend>Font family</legend>
+        <input type="radio" value='sans-serif' bind-value="fontFamily">
+          Sans-serif<br>
+        <input type="radio" value='serif' bind-value="fontFamily">serif<br>           
+      </fieldset>
+      
+      <fieldset>
+        <legend>Font size</legend>
+        <input type="radio" value='small' bind-value="fontSize">Small<br>
+        <input type="radio" value='normal' bind-value="fontSize">Normal<br>
+        <input type="radio" value='large' bind-value="fontSize">Large               
+      </fieldset>
+      
+      <fieldset>
+        <legend>General look</legend>
+        <input type="radio" value='styled' bind-value="generalLook">Styled<br>
+        <input type="radio" value='plain' bind-value="generalLook">Plain<br>             
+      </fieldset>
+    </div>
+    <hr>
+    
+    <div class="{{fontFamily}} {{fontSize}} {{generalLook}}">
+      
+      <p>Key Lime Pie ingredients:</p>
+      
+      <ul>
+        <li>1 (9 inch) prepared graham cracker crust</li>
+        <li>3 cups sweetened condensed milk</li>
+        <li>1/2 cup sour cream</li>
+        <li>3/4 cup key lime juice</li>
+      </ul>
+    </div>
+    
+    <script type="application/dart">
+      @observable
+      String fontFamily='sans-serif';
+      
+      @observable
+      String fontSize='normal';
+      
+      @observable
+      String generalLook='styled';
+      
+      void main() {}
+    </script>
+  </body>
+</html>
+--------------------------------------------------------------------------------
+
+
