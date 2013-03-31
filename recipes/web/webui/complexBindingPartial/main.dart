@@ -17,8 +17,8 @@ User user;
 
 void main() {
   user = new User(
-    'dartisan12', 
-    'dartisan12@dartisans.com',
+    'uber-dartisan', 
+    'uber-dartisan@dartisans.com',
     'Knowing all there is to know about Dart'
   );  
 }
