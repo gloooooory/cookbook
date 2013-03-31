@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html> 
+  <head>
+    <style>
+      td, th {border: 1px solid black; margin: 2px; padding: 4px; width: 200px}
+    </style>
+  </head>
+  <body>   
+    <table>
+      <tr>
+        <th>Username</th>
+        <!-- <th>Email</th> -->
+        <th>Tagline</th>
+      </tr>
+      <tr>
+        <td>{{user.username}}</td>
+        <!-- <td>{{user.email}}</td> -->
+        <td>{{user.tagline}}</td>
+    </table>
+    
+    <hr>
+    
+    <div>
+      Username: <input type='text' bind-value='user.username' /><br>
+      <!-- Email: <input type='text' bind-value='user.email' /><br> -->
+      Tagline: <input type='text' bind-value='user.tagline' /><br>
+    </div>
+
+    <script type="application/dart" src="main.dart"></script>
+  </body>
+</html>
