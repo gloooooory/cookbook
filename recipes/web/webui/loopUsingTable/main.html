@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    td {padding-right: 25px;}
+  </style>
+</head>
+<body>  
+  <table>
+    <tbody template iterate='book in books'>
+      <tr template iterate='attribute in book'>
+        <td>{{attribute}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <script type="application/dart" src='main.dart'></script>
+</body>
+</html>

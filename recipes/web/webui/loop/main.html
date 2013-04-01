@@ -1,32 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-</head>
-<body>
-  <div>
-    <template instantiate='if noBooks'>
-      <h2>No Books to Display</h2>
-    </template>
 
-    <template instantiate='if !noBooks'>
-      <h2>Books:</h2>
+<html>
+  <head>
+  <style>
+    ul {list-style: none; margin: 0; padding: 0px 10px 16px 0px}
+    li {padding: 5px 10px 0 0;}
+  </style>
+</head>
+
+<body>  
+    <template iterate='book in books'>
       <ul>
-        <template iterate='book in books'>
-          <li>{{book.title}}
-          <ul template instantiate="if showBookDetails">
-            <li>${{book.price}}</li>
-            <li>{{book.numPages}} pages</li>
-            <li>{{book.available ? "Available" : "Out of Stock"}}</li>
-          </ul>
-          </li>
-        </template>
-      </ul> 
-      <div><input type="checkbox" bind-checked="showBookDetails">show details</div> 
-      <hr>
-      <div id="emptyBookList"><a href="#" on-click="emptyBookList()">delete all books</a></div>
+        <li>Name: {{book[0]}}</li>
+        <li>Price: {{book[1]}}</li>
+        <li>Pages: {{book[2]}}</li>
+      </ul>
     </template>
-  </div>
   
   <script type="application/dart" src='main.dart'></script>
 </body>
