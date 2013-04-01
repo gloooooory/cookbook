@@ -1,30 +1,22 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-  <style>
-    td, th {border: 1px solid black; margin: 2px; padding: 4px; width: 200px}
-  </style>
-</head>
 <body> 
-  <h3>Person record</h3>
-  <table>    
-    <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Date of Birth</th>
-    </tr>
-    <tr>
-      <td>{{ person.firstName }}</td>
-      <td>{{ person.lastName }}</td>
-      <td>{{ person.dateOfBirth }}</td>        
-    </tr>
-  </table>
-
-  <h3>Edit record</h3>
-  First Name: <input type="text" bind-value="person.firstName"><br>
-  Last Name: <input type="text" bind-value="person.lastName"><br>
-  Last Name: <input type="text" bind-value="person.dateOfBirth"><br>
+  <div> 
+    <template iterate='person in persons'>
+      
+      <p>
+        {{ person.firstName }}, {{ person.lastName }}, {{ person.dateOfBirth }}
+      </p>
+      
+      <p>
+        First Name: <input type="text" bind-value="person.firstName">
+        Last Name: <input type="text" bind-value="person.lastName">
+        Date of birth: <input type="text" bind-value="person.dateOfBirth"> 
+      </p>
+      <hr>
+    </template>
+  </div>
 
   <script type="application/dart" src="main.dart"></script>
 </body>

@@ -9,10 +9,11 @@ class Person {
   Person(this.firstName, this.lastName, this.dateOfBirth);
 }
 
-Person person;
+List<Person> persons;
 
 main() { 
-  person = new Person('Jon',  'Smith', '1999/09/06');
+  persons = [new Person('Jon',  'Smith', '1999/09/06'),
+             new Person('Ruth',  'Ortiz', '1998/08/11')];
 }
 
 
