@@ -4,7 +4,7 @@
 
 == Web UI
 
-=== Use Dart code within html
+=== Using Dart variables and expressions inside HTML
 
 ==== Problem
 
@@ -13,336 +13,419 @@ markup.
 
 ==== Solution
 
-Put valid Dart expressions within `{{ }}`.
+Put Dart identifier and expressions within `{{ }}`.
 
 The Web UI framework evaluate the code inside `{{  }}` and injects the result
-into the markup. You can use identifiers, and call functions and methods:
+into the markup.
+
+Begin with defining some variables and functions in a file (main.dart):
+
+--------------------------------------------------------------------------------
+import 'package:web_ui/web_ui.dart';
+
+var x = 32;
+var y = 3;
+
+num div(x, y) => x / y;
+num intDiv(x, y) => x ~/ y;
+
+void main() {}
+
+--------------------------------------------------------------------------------
+
+Then, interpolate those variables and functions into your markup (`main.html`).
+You can interpolate idenfiers, functions (with arguments), and you can call
+methods:
 
 --------------------------------------------------------------------------------
 <!DOCTYPE html>
 
 <html>
   <body>
+      
+    <div>
+      There are two ways to divide numbers in Dart. Assume:
+      <ul>
+        <li>x = {{ x }}</li>
+        <li>y = {{ y }}</li>
+      </ul>
+    </div>
     
-  <div>
-    There are two ways to divide numbers in Dart. Assume:
-    <ul><li>x = {{ x }}</li><li>y = {{ y }}</li></ul>
-  </div>
-  
-  <div>Integer division: <ul><li>x ~/ y = {{ intDiv(x,y) }}</li></ul></div>
+    <div>   
+      Integer division:
+      <ul>
+        <li>x ~/ y = {{ intDiv(x,y) }}</li>
+      </ul>
+    </div>
+      
+    <div>
+      Double division:
+      <ul>
+        <li>x / y = {{ div(x,y) }}</li>
+      </ul>
+    </div>
     
-  <div>Double division: <ul><li>x / y = {{ div(x,y) }}</li></ul></div>
-  
-  <div>
-    You can write the number {{ x }} in a bunch of ways:
-    <ul>
-      <li>In binary: {{ x.toRadixString(2) }}</li>
-      <li>In octal: {{ x.toRadixString(8) }}</li>
-      <li>In hexadecimal: {{ x.toRadixString(16) }}</li>
-    </ul>
-  </div>
+    <div>
+      You can write the number {{ x }} in a bunch of ways:
+      <ul>
+        <li>In binary: {{ x.toRadixString(2) }}</li>
+        <li>In octal: {{ x.toRadixString(8) }}</li>
+        <li>In hexadecimal: {{ x.toRadixString(16) }}</li>
+      </ul>
+    </div>
     
-  
-  <script src="packages/browser/dart.js"></script>
-  <script type="application/dart">
-
-    var x = 32;
-    var y = 3;
-    
-    num div(x, y) => x / y;
-    num intDiv(x, y) => x ~/ y;
-    
-    void main() {}
-  </script>
-</body>
+    <script type="application/dart" src="main.dart"></script>
+  </body>
 </html>
 --------------------------------------------------------------------------------
 
 
-=== Create a one-way data binding
+=== Creating a one-way data binding
 
 ==== Problem
 
-You want to sync up a variable and its display. Every time the value of the
-variable changes, you want its display to auto-magically change without having
-to do any DOM manipulation.
+You want to sync up a variable and its display. Every time the variable's
+value changes, you want its display to auto-magically change without having to
+do any DOM manipulation.
 
 ==== Solution
 
-Add an `@observable` declaration right before you define an object. This create
-a binding between that object and its display in the UI.
-
---------------------------------------------------------------------------------
-@observable
-var x = 10;
---------------------------------------------------------------------------------
-
-With the `@observable` declaration in place, every time the observed object gets
-a new value, its display gets updated without the need for a page refresh. You
-don't have to worry about any DOM manipulation. 
-
-Consider the code below for displaying a movie quote on a page. The `quote`
-variable stores the quote to display, and every time the value of `quote`
-changes, the UI updates.
+Add an `@observable` declaration right before you define a variable. This create
+a binding between that variable and its display in the UI.
 
 --------------------------------------------------------------------------------
 @observable 
-var quote;
+var myVar;
 --------------------------------------------------------------------------------
 
-Here is the entire script:
+You can then use the variable in your markup. The `@observable` declaration
+ensures that every time the variable's value changes, the UI updates
+automatically.
+
+==== Discussion
+
+Imagine you have a collection of movie quotes that you would like to display
+on a page. You don't want to show all the quotes at once, but prefer to roll
+them out one by one every couple of seconds in a slideshow fashion.
+
+Since only a single quote displays at a time, the markup for that is pretty
+straightforward (`main.html`):
 
 --------------------------------------------------------------------------------
 <!DOCTYPE html>
 
 <html>
   <body>
-  <div><em>{{ quote.quote }}</em> - {{ quote.saidBy }}</div>
+    <div><em>{{ quote.quote }}</em> - {{ quote.saidBy }}</div>
   
-  <script type="application/dart">
-    
-    import 'dart:async';
-    
-    class Quote {
-      String quote, saidBy; 
-      Quote(this.quote, this.saidBy);
-    }
-    
-    // Create the binding. This is where the magic happens.
-    // Every time the value of quote changes, its display changes
-    // automatcially.
-    @observable 
-    var quote;
-      
-    void main() {
-       // Assemble a bunch of quotes.
-       List<Quote> quotes = [
-         new Quote('This agression will not stand, man.', 'The Dude'),
-         new Quote('You are entering a world of pain', 'Walter'),
-         new Quote('The rug really tied the room together.', 'The Dude'),
-         new Quote('Mark it zero, dude', 'Walter')
-       ];
-        
-       var i = 0;
-       quote = quotes[i];
-       
-       // Cycle throw the quotes, assigning a new item to the quote
-       // variable every three seconds.
-       new Timer.periodic(new Duration(milliseconds:3000), (_) {
-         i = (i == quotes.length - 1) ? 0 : i + 1;
-         quote = quotes[i];
-       });
-     }
-  </script>
-</body>
+    <script type="application/dart" src="main.dart"></script>
+  </body>
 </html>
 --------------------------------------------------------------------------------
 
-=== Create a two way data binding
+The Dart code (`main.dart`) is responsible for setting up the logic for
+picking one quote from the quote collection. The variable storing the quote
+being displayed _is made observable_, and its value is refreshed every two seconds:
+
+--------------------------------------------------------------------------------
+import 'package:web_ui/web_ui.dart';
+import 'dart:async';
+
+class Quote {
+  String quote, saidBy; 
+  Quote(this.quote, this.saidBy);
+}
+
+// MAGIC!!!
+@observable 
+var quote;
+  
+void main() {
+   List<Quote> quotes = [
+     new Quote('This agression will not stand, man.', 'The Dude'),
+     new Quote('You are entering a world of pain', 'Walter'),
+     new Quote('The rug really tied the room together.', 'The Dude'),
+     new Quote('Mark it zero, dude', 'Walter')
+     ];
+    
+   var i = 0;
+   quote = quotes[i];
+   
+   // Cycle through the quotes, picking a new quote every couple of seconds.
+   new Timer.periodic(new Duration(milliseconds:2000), (_) {
+     i = (i == quotes.length - 1) ? 0 : i + 1;
+     quote = quotes[i];
+   });
+ }
+--------------------------------------------------------------------------------
+
+When a new quote is selected, the UI updates to display it. There is no need
+for a page refresh, and you don't have to worry about any DOM manipulation. 
+
+
+=== Creating a two way data binding
 
 ==== Problem
 
-You want to sync a variable and its display in the UI. If the variable
-changes, its display should also change, and if the display changes, the
-variable should also change.
+You want to sync a variable and its display in the UI so that when the variable
+changes, its display updates, and when the variable's display changes, its value
+updates.
 
 ==== Solution
 
-Create a two-way binding between an object and its display. 
+Create a two-way binding between an object and its display. This is a two-step
+process.
 
-First, make an object observable:
+Step 1: Make the object observable:
 
 --------------------------------------------------------------------------------
 @observable
-var someObject = '';
+var someObject = someValue;
 --------------------------------------------------------------------------------
 
-Then, declare an explicit binding in the markup using the `bind-value=`
-syntax:
+This creates a one-way binding between the object and its display in the UI.
+If the object's value changes, the UI updates accordingly. 
+
+Step 2: Bind an HTML element to the object you just declared observable using
+the `bind-property="object"` syntax (where `property` is some associated property
+in the HTML element).
+
+If the Dart object is a String (possibly represented in the UI with a text
+input), the associated `property` is 'value'. Use `bind-value` to create the
+binding:
 
 --------------------------------------------------------------------------------
 <input type="text" bind-value="someObject">
 --------------------------------------------------------------------------------
 
-Build and run the script below to see the power of two-way data binding. 
+If the Dart object is a boolean (possibly represented in the UI with a
+checkbox), the associated `property` is 'checked'. Use `bind-checked` to create
+the binding:
 
-The variable `str` is made observable, and an input field is bound to it.
-Modify the contents of the input field, and the value of `str`
-resets. Modify `str` using one of the buttons provided, and the text inside
-the input field resets. There is no page refresh, and no need for any DOM
-manipualation. The data and its representation are fully synced up.
+--------------------------------------------------------------------------------
+<input type="checkbox" bind-checked="someObject">
+--------------------------------------------------------------------------------
+
+This second step makes the binding bi-directional: now, changes made in the UI
+reset the bound object's value.
+
+==== Discussion
+
+The short script below demonstrates the power of two-way data binding. 
+
+A variable (`str`) is made observable, and given a default starting value.
+A text input box is bound to this variable using the `bind-value` syntax
+discussed above.
+
+If you change the value in the input box, `str`s value changes.
+
+If you then reset `str`'s value using the 'Reset` button provided, the
+UI adjusts automatically.  
+
+Here is the markup ('main.html'):
+
 
 --------------------------------------------------------------------------------
 <!DOCTYPE html>
 
 <html>
   <body>
-  <div>
-    Input:
-
-    <!-- Text entered here is stored in the str variable -->
-    <input type="text" bind-value="str" placeholder="type something here">
-
-    <!-- Display value of str. Changes as the value of str changes.  -->
-    <div> You typed: {{str}}
+    <div>
+      Input:
+      <input type="text" bind-value="str" placeholder="type something here">
+      <br>
+      
+      <p>The value of 'str' is: {{str}}</p>
       <br />
-
-      <!-- Change str case. The UI updates automatically -->
-      <input on-click="upcase()" type='button' value='Click to upcase' />
-      <input on-click="downcase()" type='button' value='Click to downcase' />
+      <div>
+        <input on-click="reset()" type='button' value="Reset 'str' value" />
+      </div>
     </div>
-  <ediv>
 
-  <script type="application/dart">
-    
-    @observable
-    String str = '';
-    
-    void upcase() {
-      str = str.toUpperCase();
-    }
- 
-    void downcase() {
-      str = str.toLowerCase();
-    }
-    
-    main() {}
-  </script>
-</body>
+    <script type="application/dart" src="main.dart"></script>
+   </body>
 </html>
 --------------------------------------------------------------------------------
 
+And here is the accompanying Dart code ('main.dart'):
 
-=== Selectively activate parts of the UI
+--------------------------------------------------------------------------------
+import 'package:web_ui/web_ui.dart';
+
+var fact = 'Dart is fun!';
+
+@observable
+String str;
+    
+void reset() {
+  str = fact;
+}
+    
+main() {
+  str = fact;
+}
+--------------------------------------------------------------------------------
+
+=== Looping over a collection
+
 
 ==== Problem
 
-How do you conditionally display parts of a page? Maybe you want to start off
-with only a small amount of content on a page, and display more content only if
-the user UI only if the user wants to see it.
+You want to use a template to display each item in a collection.
 
 ==== Solution
 
-Wrap a portion of the UI in a <template> tag and instantiate the template
-conditionally by using the following syntax:
+To loop over a collection, use the iterate attribute within a template tag:
 
 --------------------------------------------------------------------------------
-<div template instantiate="if displayItAll">
+<template iterate='item in collection'>
 --------------------------------------------------------------------------------
 
-Make the variable used in the conditional observable:
+==== Discussion
+
+Consider the following Dart code that defines a collection of books:
 
 --------------------------------------------------------------------------------
-@observable
-bool displayItAll = false;
+import "package:web_ui/web_ui.dart";
+
+var books = [];
+
+main() {
+  books = [
+    ["War and Peace", 20.99, 1013],
+    ["Anna Karenina", 23.99, 1243],
+    ["The Old Man and the Sea", 8.99, 78]
+  ]; 
+}
 --------------------------------------------------------------------------------
 
-If the value of the observable variable changes to true, the conditional
-template activates.
-
-Shown below is code for displaying user records. The name of the user is
-always displayed. The full user record is displayed only if the 'Show full
-record' checkbox is checked.
-
-The conditional display is governed by the `showFull` boolean, which is made
-observable:
-
---------------------------------------------------------------------------------
-@observable
-bool showFull = false;
---------------------------------------------------------------------------------
-
-The checkbox is bound to the `showFull` boolean:
-
---------------------------------------------------------------------------------
-<input type="checkbox" bind-checked="showFull">Show full record<br><br>
---------------------------------------------------------------------------------
-
-When the checkbox is checked, `showFull` becomes `true`, and the conditional
-templates activate.
+Here is some code that loops over the books collection and prints out the
+details of each book: 
 
 --------------------------------------------------------------------------------
 <!DOCTYPE html>
 
 <html>
-  <body> 
-    <input type="checkbox" bind-checked="showFull">Show full record<br><br>
+  <head>
+  <style>
+    ul {list-style: none; margin: 0; padding: 0px 10px 16px 0px}
+    li {padding: 5px 10px 0 0;}
+  </style>
+</head>
 
-    <div>{{record1.name}}</div>
-    <div template instantiate="if showFull">
-      Age: {{record1.age}}<br>
-      Phone: {{record1.phone}}<br>
-      Email: {{record1.email}}<br>                
-    </div><br>
-
-    <div>{{record2.name}}</div>
-    <div template instantiate="if showFull">
-      Age: {{record2.age}}<br>
-      Phone: {{record2.phone}}<br>
-      Email: {{record2.email}}<br>                
-    </div><br>
-
-    <div>{{record3.name}}</div>
-    <div template instantiate="if showFull">
-      Age: {{record3.age}}<br>
-      Phone: {{record3.phone}}<br>
-      Email: {{record3.email}}<br>                
-    </div>
-    
-    <script type="application/dart">
-      class Record {
-        String name, age, phone, email;
-        Record(this.name, this.age, this.phone, this.email);
-      }
-      
-      var record1 = new Record('John Doe', '34', '212-555-1234', 'john@jd.com');
-      var record2 = new Record('Mario Lark', '33', '510-454-4545', 'ml@ml.com');
-      var record3 = new Record('Paula Ho', '37', '617-555-4321', 'paula@ph.org');
-   
-      @observable
-      bool showFull = false;
-      
-      void main() {}
-    </script>
-  </body>
+<body>  
+    <template iterate='book in books'>
+      <ul>
+        <li>Name: {{book[0]}}</li>
+        <li>Price: {{book[1]}}</li>
+        <li>Pages: {{book[2]}}</li>
+      </ul>
+    </template>
+  
+  <script type="application/dart" src='main.dart'></script>
+</body>
 </html>
+--------------------------------------------------------------------------------
 
+You can also express loops using attributes on any element. Here is the syntax
+for doing that:
+
+--------------------------------------------------------------------------------
+<tbody template iterate='book in books'>
+--------------------------------------------------------------------------------
+  
+Because <template> tags are not permitted within HTML tables, you must use
+this syntax to use loops with table rows and cells. 
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    td {padding-right: 25px;}
+  </style>
+</head>
+<body>  
+  <table>
+    <tbody template iterate='book in books'>
+      <tr template iterate='attribute in book'>
+        <td>{{attribute}}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <script type="application/dart" src='main.dart'></script>
+</body>
+</html>
 --------------------------------------------------------------------------------
 
 
-=== XXX
+=== Selectively activating parts of the UI
 
 ==== Problem
 
-You want to dynamically set the class attribute of an element to change its
-style properties.
+You want to conditionally display parts of a page. Maybe you want to start off
+with only a small amount of content on a page, and display more content if
+the user requests it.
 
 ==== Solution
 
-Bind an element's class attributes to one or more variables. When the variables
-change, the class attributes update accordingly.
-
-The script below allows a user to set the font-size, the font-family and the
-general look of the page. The div that contains the page contents binds to
-variables that set the classes that affect the div's styles: 
+Wrap a portion of the UI in a <template> tag, and instantiate the template
+conditionally by using the following syntax:
 
 --------------------------------------------------------------------------------
-<div class="{{fontFamily}} {{fontSize}} {{generalLook}}">
+<template instantiate='if conditionalVariable'> 
 --------------------------------------------------------------------------------
 
-The binding is declared in the html using the `bind-value=` syntax:
+For this to work, you need to make the conditional variable observable:
 
 --------------------------------------------------------------------------------
-<input type="radio" value='sans-serif' bind-value="fontFamily">Sans-serif<br>
-...
-<input type="radio" value='small' bind-value="fontSize">Small<br>
-...
-<input type="radio" value='styled' bind-value="generalLook">Styled<br>
-...
+@observable
+bool conditionalVariable = false;
 --------------------------------------------------------------------------------
 
-Here is the entire script. Build and run it, and play around with the page
-styles:
+Then, set up the UI bindings to toggle the state of the conditional variable.
+You can use a checkbox, and `bind-checked` to create the binding: 
+
+--------------------------------------------------------------------------------
+<input type="checkbox" bind-checked="conditionalVariable">
+--------------------------------------------------------------------------------
+
+If the checkbox is checked, the conditional variable becomes true, and the
+conditional template activates.
+
+==== Discussion
+
+Shown below is code for displaying user records. The name of the user is
+always displayed. The full user record is displayed only if the 'Show full
+record' checkbox is checked.
+
+The list of records and he conditional variable are defined in the Dart code
+(`main.dart`):
+ 
+--------------------------------------------------------------------------------
+import 'package:web_ui/web_ui.dart';
+
+class Record {
+  String name, age, phone, email;
+  
+  Record(this.name, this.age, this.phone, this.email);
+}
+
+var records = [
+    new Record('John Doe', '34', '212-555-1234', 'john@jd.com'),
+    new Record('Mario Lark', '33', '510-454-4545', 'ml@ml.com'),
+    new Record('Paula Ho', '37', '617-555-4321', 'paula@ph.org')
+  ];
+ 
+@observable
+bool showFullRecord = false;
+
+void main() {}
+--------------------------------------------------------------------------------
+
+The HTML uses a loop to iterate over the list of records, displaying the full
+record only if the checkbox is checked:
 
 --------------------------------------------------------------------------------
 <!DOCTYPE html>
@@ -350,73 +433,540 @@ styles:
 <html>
   <head>
     <style>
-      .menu {font-family: sans-serif}
-      .menu fieldset {width:200px; margin-left: 20px}
-      
-      .small  {font-size: .75em;}
-      .normal {font-size: 1em;}
-      .large {font-size: 1.35em;}
-      
-      .sans-serif {font-family: sans-serif}
-      
-      .styled p {font-weight: bold}
-      .styled ul {list-style: none; padding-left: 20px; width: 450px}
-      .styled ul li {border: 1px solid black; margin: 1px; padding:2px;}
+      ul {list-style-position: inside; padding-left: 10px}
+    </style>
+  </head>
+  <body> 
+  
+    <div>
+      <input type="checkbox" bind-checked="showFullRecord" />Show full record
+      <br>
+    </div>
+  
+    <div>
+      <template iterate='record in records'>
+        <ul>
+          <li>{{record.name}}   
+            <template instantiate='if showFullRecord'>   
+              <ul>
+                <li>{{record.age}}</li>
+                <li>{{record.phone}}</li>
+                <li>{{record.email}}</li>
+              </ul>
+            </template>
+          </li> 
+        </ul> 
+      </template>
+    </div>
+
+  <script type="application/dart" src="main.dart"></script>
+</body>
+</html>
+--------------------------------------------------------------------------------
+
+
+=== Binding element attributes to variables
+
+==== Problem
+
+You want to dynamically set the value of an element attribute.
+
+==== Solution
+
+Create a binding between that attribute and a Dart variable. When the
+variable's value changes, the attribute's value updates automatically.
+
+==== Discussion
+
+The code below demonstrates how to dynamically modify an element's class
+attribute in order affect the element's style properties (`dart.html`):
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      .small  {font-size: .95em;}
+      .normal {font-size: 1.1em;}
+      .large  {font-size: 1.25em;}
     </style>
   </head>
   
   <body> 
-   <div class='menu'>
-     <h3>Set page styles:</h3>
-     
-     <fieldset>
-        <legend>Font family</legend>
-        <input type="radio" value='sans-serif' bind-value="fontFamily">
-          Sans-serif<br>
-        <input type="radio" value='serif' bind-value="fontFamily">serif<br>           
-      </fieldset>
-      
-      <fieldset>
-        <legend>Font size</legend>
-        <input type="radio" value='small' bind-value="fontSize">Small<br>
-        <input type="radio" value='normal' bind-value="fontSize">Normal<br>
-        <input type="radio" value='large' bind-value="fontSize">Large               
-      </fieldset>
-      
-      <fieldset>
-        <legend>General look</legend>
-        <input type="radio" value='styled' bind-value="generalLook">Styled<br>
-        <input type="radio" value='plain' bind-value="generalLook">Plain<br>             
-      </fieldset>
-    </div>
-    <hr>
+   <div>
+     <h3>Set font size:</h3>
+     <input type="radio" value='small' bind-value="fontSizeClass">Small
+     <input type="radio" value='normal' bind-value="fontSizeClass">Normal
+     <input type="radio" value='large' bind-value="fontSizeClass">Large
+  </div>
+  <hr>
     
-    <div class="{{fontFamily}} {{fontSize}} {{generalLook}}">
-      
-      <p>Key Lime Pie ingredients:</p>
-      
-      <ul>
-        <li>1 (9 inch) prepared graham cracker crust</li>
-        <li>3 cups sweetened condensed milk</li>
-        <li>1/2 cup sour cream</li>
-        <li>3/4 cup key lime juice</li>
-      </ul>
-    </div>
+  <div class="{{fontSizeClass}}">
     
-    <script type="application/dart">
-      @observable
-      String fontFamily='sans-serif';
-      
-      @observable
-      String fontSize='normal';
-      
-      @observable
-      String generalLook='styled';
-      
-      void main() {}
-    </script>
+    <p>Key Lime Pie ingredients:</p>
+    
+    <ul>
+      <li>1 (9 inch) prepared graham cracker crust</li>
+      <li>3 cups sweetened condensed milk</li>
+      <li>1/2 cup sour cream</li>
+      <li>3/4 cup key lime juice</li>
+    </ul>
+  </div>
+    
+    <script type="application/dart" src="main.dart"></script>
   </body>
 </html>
 --------------------------------------------------------------------------------
+
+Here is the `main.dart` file:
+
+--------------------------------------------------------------------------------
+import 'package:web_ui/web_ui.dart';
+
+@observable
+String fontSizeClass='normal';
+
+void main() {}
+--------------------------------------------------------------------------------
+
+The main div element's class is stored in a variable:
+
+--------------------------------------------------------------------------------
+<div class="{{fontSizeClass}}">
+--------------------------------------------------------------------------------
+
+We declare that variable observable: when it changes, the div's class also
+changes:
+
+--------------------------------------------------------------------------------
+@observable
+String fontSizeClass='normal';
+--------------------------------------------------------------------------------
+
+We create a binding between the `fontSizeClass` variable and some radio buttons
+using `bind-value` syntax:
+
+--------------------------------------------------------------------------------
+<input type="radio" value='small' bind-value="fontSizeClass">Small
+...
+--------------------------------------------------------------------------------
+
+When the user selects a button, the button's value becomes the value of 
+`fontSizeClass`, which then becomes the value of the div element's class
+attribute.
+
+===== Having multiple classes
+
+This script is simple. The user can alter the class of an element and
+manipulate the font size of that element. The script can be easily extended to
+give the element multiple classes.
+
+Web UI templates support several ways of notating multiple classes. You can use
+multiple variables:
+
+--------------------------------------------------------------------------------
+<div class="{{Class1}} {{Class2}}"></div>
+--------------------------------------------------------------------------------
+
+Or, use a list:
+
+--------------------------------------------------------------------------------
+<div class="{{classes}}"></div>
+--------------------------------------------------------------------------------
+
+Or, combine the classes in a string:
+
+--------------------------------------------------------------------------------
+<div class="{{classesAsString}}"></div>
+--------------------------------------------------------------------------------
+
+
+=== Binding complex objects
+
+==== Problem
+
+You've defined a class, created objects of that class, and written code in the
+UI to display those objects.
+
+You find that it takes an awful lot of effort to keep those objects synced up
+with the UI, and you find your code littered with @observable declarations.
+
+
+==== Solution
+
+Make an entire class observable. This will make each attribute of every
+instance of that class observable.
+
+--------------------------------------------------------------------------------
+@observable
+class Point() {
+  num x, y;
+  Point(this.x, this.y);
+}
+--------------------------------------------------------------------------------
+
+==== Discussion
+
+The example below shows code for storing information about a Person. We define a
+Person class, make it observable, and create a couple of Person objects
+(`main.dart`):
+
+--------------------------------------------------------------------------------
+import 'package:web_ui/web_ui.dart';
+
+@observable
+class Person {
+  String firstName;
+  String lastName;
+  String dateOfBirth;
+  
+  Person(this.firstName, this.lastName, this.dateOfBirth);
+}
+
+Person person;
+
+main() { 
+  person = new Person('Jon',  'Smith', '1999/09/06');
+}
+--------------------------------------------------------------------------------
+
+In `main.html` we display each Person object along with a form to edit the
+Person record. We bind the input fields in the form to the Person object using
+`bind-value` syntax:
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html>
+<body> 
+  <div> 
+    <template iterate='person in persons'>
+      
+      <p>
+        {{ person.firstName }}, {{ person.lastName }}, {{ person.dateOfBirth }}
+      </p>
+      
+      <p>
+        First Name: <input type="text" bind-value="person.firstName">
+        Last Name: <input type="text" bind-value="person.lastName">
+        Date of birth: <input type="text" bind-value="person.dateOfBirth"> 
+      </p>
+      <hr>
+    </template>
+  </div>
+
+  <script type="application/dart" src="main.dart"></script>
+</body>
+</html>
+
+--------------------------------------------------------------------------------
+
+Because of the data-binding created between every Person instance and the
+UI, changing the value in any input box modifies the corresponding object
+attribute.
+
+
+=== Binding complex objects that use composition
+
+==== Problem
+
+You want to create a binding for complex objects that are made up of other
+complex objects.
+
+==== Solution
+
+Declare both the composing and the composed classes observable:
+
+--------------------------------------------------------------------------------
+@observable
+class Composer {
+  num x, y;
+  Composed composed;
+
+  Composer(this.x, this.y, this.composed);
+}
+
+@observable
+class Composed {
+  num a, b;
+  ...
+}
+--------------------------------------------------------------------------------
+
+This makes every instance of the composing class observable. The composed
+attribute is accessible like any other object attribute:
+
+--------------------------------------------------------------------------------
+composer.x;
+composer.y;
+composer.composed.a;
+composer.composed.b;
+--------------------------------------------------------------------------------
+
+==== Discussion
+
+The following program models a Person object. A Person has a first name, a
+last name, a date of birth, and a Passport (`main.dart`):
+
+--------------------------------------------------------------------------------
+import 'package:web_ui/web_ui.dart';
+
+@observable
+class Person {
+  String firstName;
+  String lastName;
+  String dateOfBirth;
+  Passport passport;
+  
+  Person(this.firstName, this.lastName, this.dateOfBirth, this.passport);
+}
+
+@observable
+class Passport {
+  String number, dateIssued, placeIssued, expiresOn;
+  Passport(this.number, this.dateIssued, this.placeIssued, this.expiresOn);
+}
+
+Person person;
+
+main() { 
+  person = new Person('Jon',  'Smith', '1999/09/06',
+      new Passport('RN4455009', '2012/11/08', 'New York, NY', '2022/11/08'));
+}
+
+--------------------------------------------------------------------------------
+
+The UI displays the Person record, as well as a form for editing that record.
+Because we made the Passport class observable, we can edit the composed Passport
+object through the UI:
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html>
+<head>
+  <style>
+    td, th {border: 1px solid black; margin: 2px; padding: 4px; width: 200px}
+  </style>
+</head>
+<body> 
+  <h3>Person record</h3>
+  <table>  
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Date of Birth</th>
+      <th>Passport Number</th>
+      <th>Date Issued</th>
+      <th>Place Issued</th>
+      <th>Expires</th>
+    </tr>
+    
+    <tr>
+      <td>{{ person.firstName }}</td>
+      <td>{{ person.lastName }}</td>
+      <td>{{ person.dateOfBirth }}</td>
+      
+      <td>{{ person.passport.number }}</td>
+      <td>{{ person.passport.dateIssued }}</td>
+      <td>{{ person.passport.placeIssued }}</td>
+      <td>{{ person.passport.expiresOn }}</td>
+    </tr>
+  </table>
+  
+  <h3>Edit record</h3>
+  First Name: <input type="text" bind-value="person.firstName"><br>
+  Last Name: <input type="text" bind-value="person.lastName"><br>
+  Last Name: <input type="text" bind-value="person.dateOfBirth"><br>
+  
+  Passport Number: <input type="text" bind-value="person.passport.number"><br>
+  Date issued: <input type="text" bind-value="person.passport.dateIssued"><br>
+  Place issued: <input type="text" bind-value="person.passport.placeIssued"><br>
+  Expires: <input type="text" bind-value="person.passport.expiresOn"><br>
+ 
+  <script type="application/dart" src="main.dart"></script>
+</body>
+</html>
+
+--------------------------------------------------------------------------------
+
+=== Partially binding complex objects
+
+==== Problem
+
+You want every instance of a class to be observable, but don't want to make
+every attribute of the instance observable.
+
+==== Solution
+
+Don't place an @observable declaration before the class definition. Instead,
+place the @observable declaration before attributes that you want to make
+observable. Attributes not preceded by the @observable declaration 
+remain unaffected:
+
+--------------------------------------------------------------------------------
+@observable
+class Point{
+  num x;
+
+  @observable
+  num y;
+
+  Point(this.x, this.y);
+}
+--------------------------------------------------------------------------------
+
+==== Discussion
+
+The example below models a User object. A User has three fields, a username,
+an email address, and a tagline. You want only the username and tagline to be
+observable:
+
+--------------------------------------------------------------------------------
+import 'package:web_ui/web_ui.dart';
+
+class User {
+  
+  @observable
+  String username;
+
+  String email;
+  
+  @observable
+  String tagline;
+  
+  User(this.username, this.email, this.tagline);
+}
+  
+User user;
+
+void main() {
+  user = new User(
+    'uber-dartisan', 
+    'uber-dartisan@dartisans.com',
+    'Knowing all there is to know about Dart'
+  );  
+}
+--------------------------------------------------------------------------------
+
+The `main.html` file displays the User record as well as a form for editing the
+record. Editing the username or the tagline in the form immediately changes the
+corresponding attributes in the record.
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html> 
+  <head>
+    <style>
+      td, th {border: 1px solid black; margin: 2px; padding: 4px; width: 200px}
+    </style>
+  </head>
+  <body>   
+    <table>
+      <tr>
+        <th>Username</th>
+        <!-- <th>Email</th> -->
+        <th>Tagline</th>
+      </tr>
+      <tr>
+        <td>{{user.username}}</td>
+        <!-- <td>{{user.email}}</td> -->
+        <td>{{user.tagline}}</td>
+    </table>
+    
+    <br>
+    
+    <div>
+      Username: <input type='text' bind-value='user.username' /><br>
+      <!-- Email: <input type='text' bind-value='user.email' /><br> -->
+      Tagline: <input type='text' size=80 bind-value='user.tagline' /><br>
+    </div>
+
+    <script type="application/dart" src="main.dart"></script>
+  </body>
+</html>
+
+--------------------------------------------------------------------------------
+
+The email field has been commented out in the both the record display and the
+form. Uncomment it and try to edit the user's email. Because this field was not
+made observable, the record will not update:
+
+
+=== Binding a Map object
+
+==== Problem
+
+You want to make a Map variable observable.
+
+==== Solution
+
+Use the `toObservable()` function provided by Web UI to make a Map observable.
+You cannot use the conventional @observable declaration with a Map.
+
+
+The `main.dart` file shown below defines a Map object and makes it observable:
+
+--------------------------------------------------------------------------------
+import 'package:web_ui/web_ui.dart';
+
+var person;
+
+main() { 
+  person = toObservable({
+    'firstName': 'Jon',  
+    'lastName': 'Smith',
+    'passport' : toObservable({
+      'number': 'RN4455009', 
+      'dateIssued': '2002/11/08', 
+      'placeIssued': 'New York, NY'
+    })}); 
+}
+--------------------------------------------------------------------------------
+
+Note that the `passport` field of the Map is itself a Map. We made the nested
+Map observable as well.
+
+Here is the `main.html` file:
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html>
+  <body> 
+    <div>
+      <h3>Person record</h3>
+      <p><em>First Name: </em> {{ person['firstName'] }}</p>
+      <p><em>Last Name: </em> {{ person['lastName'] }}</p>
+  
+      <p><em>Address: </em> 
+        {{person['address']['street']}}, 
+        {{person['address']['city']}}, 
+        {{person['address']['state']}}, 
+        {{person['address']['zip']}}
+      </p>  
+      
+    </div>
+    
+    <hr>
+    
+    <div>
+      <h3>Edit record</h3>
+      First Name: <input type="text" bind-value="person['firstName']"><br>
+      Last Name: <input type="text" bind-value="person['lastName']"><br>
+      
+      Address Street: <input type="text" bind-value="person['address']['street']"><br>
+      Address City: <input type="text" bind-value="person['address']['city']"><br>
+      Address State: <input type="text" bind-value="person['address']['state']"><br>
+      Address Zip: <input type="text" bind-value="person['address']['zip']"><br>      
+    </div>
+
+  <script type="application/dart" src="main.dart"></script>
+  </body>
+</html>
+--------------------------------------------------------------------------------
+
 
 
