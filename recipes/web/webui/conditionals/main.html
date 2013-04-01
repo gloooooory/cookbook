@@ -1,44 +1,34 @@
 <!DOCTYPE html>
 
-<html><body> 
-
-  <input type="checkbox" bind-checked="showFull">Show full record<br><br>
-
-  <div>{{record1.name}}</div>
-  <div template instantiate="if showFull">
-    Age: {{record1.age}}<br>
-    Phone: {{record1.phone}}<br>
-    Email: {{record1.email}}<br>                
-  </div><br>
-  <div>{{record2.name}}</div>
-  <div template instantiate="if showFull">
-    Age: {{record2.age}}<br>
-    Phone: {{record2.phone}}<br>
-    Email: {{record2.email}}<br>                
-  </div><br>
-  <div>{{record3.name}}</div>
-  <div template instantiate="if showFull">
-    Age: {{record3.age}}<br>
-    Phone: {{record3.phone}}<br>
-    Email: {{record3.email}}<br>                
-  </div>
+<html>
+  <head>
+    <style>
+      ul {list-style-position: inside; padding-left: 10px}
+    </style>
+  </head>
+  <body> 
   
-  <script type="application/dart">
-    class Record {
-      String name, age, phone, email;
-      Record(this.name, this.age, this.phone, this.email);
-    }
-    
-    var record1 = new Record('John Doe', '34', '212-555-1234', 'john@jd.com');
-    var record2 = new Record('Mario Lark', '33', '510-454-4545', 'ml@ml.com');
-    var record3 = new Record('Paula Ho', '37', '617-555-4321', 'paula@ph.org');
- 
-    @observable
-    bool showFull = false;
-    
-    void main() {
-    
-    }
-    
-  </script>
-</body></html>
+    <div>
+      <input type="checkbox" bind-checked="showFullRecord" />Show full record
+      <br>
+    </div>
+  
+    <div>
+      <template iterate='record in records'>
+        <ul>
+          <li>{{record.name}}   
+            <template instantiate='if showFullRecord'>   
+              <ul>
+                <li>{{record.age}}</li>
+                <li>{{record.phone}}</li>
+                <li>{{record.email}}</li>
+              </ul>
+            </template>
+          </li> 
+        </ul> 
+      </template>
+    </div>
+
+  <script type="application/dart" src="main.dart"></script>
+</body>
+</html>

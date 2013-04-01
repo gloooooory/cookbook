@@ -11,35 +11,7 @@ import 'package:web_ui/observe/observable.dart' as __observe;
 
 // Original code
 
-    class Record {
-      String name, age, phone, email;
-      Record(this.name, this.age, this.phone, this.email);
-    }
-    
-    var record1 = new Record('John Doe', '34', '212-555-1234', 'john@jd.com');
-    var record2 = new Record('Mario Lark', '33', '510-454-4545', 'ml@ml.com');
-    var record3 = new Record('Paula Ho', '37', '617-555-4321', 'paula@ph.org');
- 
-    final __changes = new __observe.Observable();
-
-    bool __$showFull = false;
-    bool get showFull {
-      if (__observe.observeReads) {
-        __observe.notifyRead(__changes, __observe.ChangeRecord.FIELD, 'showFull');
-      }
-      return __$showFull;
-    }
-    set showFull(bool value) {
-      if (__observe.hasObservers(__changes)) {
-        __observe.notifyChange(__changes, __observe.ChangeRecord.FIELD, 'showFull',
-            __$showFull, value);
-      }
-      __$showFull = value;
-    }
-    
-    void main() {
-    
-    }
+  
     
   
 // Additional generated code
