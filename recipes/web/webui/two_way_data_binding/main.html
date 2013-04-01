@@ -2,30 +2,18 @@
 
 <html>
   <body>
-  <div>
-    Input:
-    <input type="text" bind-value="str" placeholder="type something here">
-    <div> You typed: {{str}}
+    <div>
+      Input:
+      <input type="text" bind-value="str" placeholder="type something here">
+      <br>
+      
+      <p>The value of 'str' is: {{str}}</p>
       <br />
-      <input on-click="upcase()" type='button' value='Click to upcase' />
-      <input on-click="downcase()" type='button' value='Click to downcase' />
+      <div>
+        <input on-click="reset()" type='button' value="Reset 'str' value" />
+      </div>
     </div>
-  </div>
 
-  <script type="application/dart">
-    
-    @observable
-    String str = '';
-    
-    void upcase() {
-      str = str.toUpperCase();
-    }
- 
-    void downcase() {
-      str = str.toLowerCase();
-    }
-    
-    main() {}
-  </script>
-</body>
+    <script type="application/dart" src="main.dart"></script>
+   </body>
 </html>
