@@ -15,7 +15,9 @@ void main() {
       'web/webui/complexBindingWithMap/main.html',
       
       'web/webui/loopUsingTable/main.html',
-      'web/webui/loop/main.html'
+      'web/webui/loop/main.html',
+
+      'web/webui/event_listener/main.html'
       ]);
 }
 

@@ -5867,3 +5867,2242 @@ build.dart --machine --removed=web/webui/change_style/main.css
 Total time                                                   --  14 ms
 build.dart finished [402 ms]
 
+---
+build.dart --machine --changed=pubspec.lock --changed=pubspec.yaml --changed=web/webui/change_style/main.dart -...
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 174 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  17 ms
+Total time spent on web/webui/complexBinding/main.html       --  19 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  46 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  21 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time                                                   -- 406 ms
+build.dart finished [801 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [428 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 188 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  41 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  19 ms
+Total time spent on web/webui/change_style/main.html         --  19 ms
+Total time spent on web/webui/complexBinding/main.html       --  17 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  32 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  16 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time                                                   -- 423 ms
+build.dart finished [821 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  17 ms
+build.dart finished [419 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 181 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  16 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time                                                   -- 400 ms
+build.dart finished [786 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  17 ms
+build.dart finished [418 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.htmlweb/webui/event_listener/main.html","to":"web/webui/loop/main.htmlweb/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 178 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  37 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  28 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+[{"method":"error","params":{"file":"web/webui/loop/main.htmlweb/webui/event_listener/main.html","message":"exception while reading file, original message:\n AsyncError: 'FileIOException: Cannot open file 'web/webui/loop/main.htmlweb/webui/event_listener/main.html' (OS Error: No such file or directory, errno = 2)'\nStack trace:\n#0      _File.open.<anonymous closure> (dart:io:1046:9)\n#1      _ThenFuture._sendValue (dart:async:463:24)\n#2      _FutureImpl._setValue (dart:async:361:26)\n#3      _CompleterImpl.complete (dart:async:190:21)\n#4      _SendPortImpl.call.<anonymous closure> (dart:isolate-patch:106:27)\n#5      _ReceivePortImpl._handleMessage (dart:isolate-patch:81:92)\n\n","line":1}}]
+Total time spent on web/webui/loop/main.htmlweb/webui/event_listener/main.html --  40 ms
+Total time                                                   -- 429 ms
+build.dart finished [813 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  21 ms
+build.dart finished [438 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+Total time                                                   --  14 ms
+build.dart finished [425 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  17 ms
+build.dart finished [411 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  17 ms
+build.dart finished [406 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [426 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 175 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  44 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  19 ms
+Total time spent on web/webui/change_style/main.html         --  17 ms
+Total time spent on web/webui/complexBinding/main.html       --  16 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  35 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  18 ms
+Total time spent on web/webui/loopUsingTable/main.html       --  13 ms
+Total time spent on web/webui/loop/main.html                 --   9 ms
+Total time spent on web/webui/event_listener/main.html       --  10 ms
+Total time                                                   -- 432 ms
+build.dart finished [814 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [432 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 179 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  17 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time spent on web/webui/event_listener/main.html       --   9 ms
+Total time                                                   -- 413 ms
+build.dart finished [797 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [422 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 171 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  37 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  20 ms
+Total time spent on web/webui/complexBinding/main.html       --  20 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --   9 ms
+Total time                                                   -- 413 ms
+build.dart finished [794 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  19 ms
+build.dart finished [444 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 183 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  19 ms
+Total time spent on web/webui/change_style/main.html         --  18 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  31 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --   9 ms
+Total time                                                   -- 420 ms
+build.dart finished [809 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  20 ms
+build.dart finished [431 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 183 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  17 ms
+Total time spent on web/webui/complexBinding/main.html       --  22 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time spent on web/webui/event_listener/main.html       --   9 ms
+Total time                                                   -- 427 ms
+build.dart finished [811 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [428 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 180 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  28 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  10 ms
+Total time                                                   -- 410 ms
+build.dart finished [793 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  24 ms
+build.dart finished [441 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 179 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  19 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  16 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  31 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  13 ms
+Total time                                                   -- 419 ms
+build.dart finished [805 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [433 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 177 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  42 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  23 ms
+Total time spent on web/webui/change_style/main.html         --  24 ms
+Total time spent on web/webui/complexBinding/main.html       --  17 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  18 ms
+Total time spent on web/webui/loopUsingTable/main.html       --  10 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  12 ms
+Total time                                                   -- 440 ms
+build.dart finished [837 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [433 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 181 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  19 ms
+Total time spent on web/webui/change_style/main.html         --  17 ms
+Total time spent on web/webui/complexBinding/main.html       --  16 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  32 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  12 ms
+Total time                                                   -- 422 ms
+build.dart finished [808 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [427 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 179 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  39 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  17 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  19 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  28 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  10 ms
+Total time                                                   -- 413 ms
+build.dart finished [797 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [418 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 181 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  37 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  31 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   8 ms
+Total time spent on web/webui/event_listener/main.html       --  11 ms
+Total time                                                   -- 417 ms
+build.dart finished [816 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [420 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 183 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  39 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  19 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  11 ms
+Total time                                                   -- 420 ms
+build.dart finished [804 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [440 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 199 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  39 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  24 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  16 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  16 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   9 ms
+Total time spent on web/webui/event_listener/main.html       --  11 ms
+Total time                                                   -- 453 ms
+build.dart finished [863 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [435 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 180 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  37 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  28 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"Expected tag name. Got something else instead","line":6,"charStart":45,"charEnd":47}}]
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"Unexpected end tag (button). Ignored.","line":6,"charStart":85,"charEnd":94}}]
+Total time spent on web/webui/event_listener/main.html       --  12 ms
+Total time                                                   -- 412 ms
+build.dart finished [798 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  19 ms
+build.dart finished [447 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 176 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  40 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  20 ms
+Total time spent on web/webui/conditionals/main.html         --  25 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  16 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"Expected tag name. Got something else instead","line":6,"charStart":45,"charEnd":47}}]
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"Unexpected end tag (button). Ignored.","line":6,"charStart":85,"charEnd":94}}]
+Total time spent on web/webui/event_listener/main.html       --  12 ms
+Total time                                                   -- 425 ms
+build.dart finished [809 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [430 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 185 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  17 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  11 ms
+Total time                                                   -- 425 ms
+build.dart finished [809 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [438 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 173 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   8 ms
+Total time spent on web/webui/event_listener/main.html       --  22 ms
+Total time                                                   -- 418 ms
+build.dart finished [801 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [429 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 178 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  40 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  16 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time spent on web/webui/event_listener/main.html       --   9 ms
+Total time                                                   -- 414 ms
+build.dart finished [796 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [431 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 183 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  39 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  24 ms
+Total time spent on web/webui/change_style/main.html         --  18 ms
+Total time spent on web/webui/complexBinding/main.html       --  17 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --  10 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  11 ms
+Total time                                                   -- 432 ms
+build.dart finished [818 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  19 ms
+build.dart finished [467 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 181 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  35 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --   9 ms
+Total time                                                   -- 416 ms
+build.dart finished [801 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [433 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 180 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  39 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  16 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --  10 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time spent on web/webui/event_listener/main.html       --   8 ms
+Total time                                                   -- 412 ms
+build.dart finished [794 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [441 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 192 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  39 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  21 ms
+Total time spent on web/webui/change_style/main.html         --  17 ms
+Total time spent on web/webui/complexBinding/main.html       --  18 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  31 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  36 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  17 ms
+Total time spent on web/webui/loopUsingTable/main.html       --  10 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/webui/event_listener/main.html       --  14 ms
+Total time                                                   -- 450 ms
+build.dart finished [861 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [441 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 183 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  39 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   8 ms
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"Unexpected start tag (html). Expected DOCTYPE.","line":1,"charStart":0,"charEnd":6}}]
+Total time spent on web/webui/event_listener/main.html       --  12 ms
+Total time                                                   -- 422 ms
+build.dart finished [810 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [436 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 176 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  37 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  28 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"Erroneous DOCTYPE.","line":1,"charStart":0,"charEnd":16}}]
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"file should start with <!DOCTYPE html> to avoid the possibility of it being parsed in quirks mode in IE. See http://www.w3.org/TR/html5-diff/#doctype","line":1,"charStart":0,"charEnd":16}}]
+Total time spent on web/webui/event_listener/main.html       --  11 ms
+Total time                                                   -- 408 ms
+build.dart finished [794 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [432 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 180 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  17 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  28 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --   9 ms
+Total time                                                   -- 412 ms
+build.dart finished [788 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [436 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 181 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  20 ms
+Total time spent on web/webui/change_style/main.html         --  17 ms
+Total time spent on web/webui/complexBinding/main.html       --  16 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  43 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  16 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time spent on web/webui/event_listener/main.html       --   8 ms
+Total time                                                   -- 431 ms
+build.dart finished [813 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  19 ms
+build.dart finished [448 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 186 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  45 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  22 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  17 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  31 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  16 ms
+Total time spent on web/webui/loopUsingTable/main.html       --  10 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  13 ms
+Total time                                                   -- 440 ms
+build.dart finished [824 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [451 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 179 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  17 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --   9 ms
+Total time                                                   -- 414 ms
+build.dart finished [804 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [440 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 179 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  16 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time spent on web/webui/event_listener/main.html       --  10 ms
+Total time                                                   -- 410 ms
+build.dart finished [796 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [422 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 183 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  19 ms
+Total time spent on web/webui/complexBinding/main.html       --  23 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time spent on web/webui/event_listener/main.html       --   9 ms
+Total time                                                   -- 426 ms
+build.dart finished [847 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  20 ms
+build.dart finished [430 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 183 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  40 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  17 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  34 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  10 ms
+Total time                                                   -- 423 ms
+build.dart finished [807 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [428 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 176 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  37 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  28 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  13 ms
+Total time                                                   -- 408 ms
+build.dart finished [789 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [422 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 181 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  37 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  28 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time spent on web/webui/event_listener/main.html       --  10 ms
+Total time                                                   -- 409 ms
+build.dart finished [794 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [420 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 178 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  39 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  19 ms
+Total time spent on web/webui/change_style/main.html         --  17 ms
+Total time spent on web/webui/complexBinding/main.html       --  21 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  37 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  20 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  10 ms
+Total time                                                   -- 432 ms
+build.dart finished [813 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [437 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 184 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  40 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  19 ms
+Total time spent on web/webui/change_style/main.html         --  17 ms
+Total time spent on web/webui/complexBinding/main.html       --  16 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  31 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  35 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  16 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"Unexpected = in unquoted attribute","line":6,"charStart":51,"charEnd":97}}]
+Total time spent on web/webui/event_listener/main.html       --  14 ms
+Total time                                                   -- 433 ms
+build.dart finished [821 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [443 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 180 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  28 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time spent on web/webui/event_listener/main.html       --  13 ms
+Total time                                                   -- 412 ms
+build.dart finished [790 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [453 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 178 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  19 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   8 ms
+Total time spent on web/webui/event_listener/main.html       --  14 ms
+Total time                                                   -- 420 ms
+build.dart finished [801 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [423 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 175 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  19 ms
+Total time spent on web/webui/change_style/main.html         --  19 ms
+Total time spent on web/webui/complexBinding/main.html       --  24 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  33 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  14 ms
+Total time                                                   -- 433 ms
+build.dart finished [829 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  19 ms
+build.dart finished [436 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 190 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"Unexpected character after attribute value.","line":6,"charStart":51,"charEnd":156}}]
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"Invalid character in attribute name","line":6,"charStart":51,"charEnd":156}}]
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"Unexpected character after / in tag. Expected >","line":6,"charStart":51,"charEnd":158}}]
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"Expected closing tag. Unexpected end of file.","line":6,"charStart":51,"charEnd":166}}]
+Total time spent on web/webui/event_listener/main.html       --  12 ms
+Total time                                                   -- 426 ms
+build.dart finished [823 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [418 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 172 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  19 ms
+Total time spent on web/webui/complexBinding/main.html       --  21 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time spent on web/webui/event_listener/main.html       --  13 ms
+Total time                                                   -- 417 ms
+build.dart finished [801 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [441 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 188 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  43 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  19 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  17 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  32 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  18 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  11 ms
+Total time                                                   -- 437 ms
+build.dart finished [829 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [419 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 173 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  39 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  21 ms
+Total time spent on web/webui/change_style/main.html         --  25 ms
+Total time spent on web/webui/complexBinding/main.html       --  21 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  39 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  35 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  12 ms
+Total time                                                   -- 442 ms
+build.dart finished [821 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [419 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 180 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  37 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  17 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  11 ms
+Total time                                                   -- 414 ms
+build.dart finished [809 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [417 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 180 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  39 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  18 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  16 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  32 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  35 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  21 ms
+Total time spent on web/webui/loopUsingTable/main.html       --  12 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time spent on web/webui/event_listener/main.html       --  10 ms
+Total time                                                   -- 433 ms
+build.dart finished [824 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [435 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 179 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  39 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  20 ms
+Total time spent on web/webui/change_style/main.html         --  18 ms
+Total time spent on web/webui/complexBinding/main.html       --  20 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  37 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  17 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   8 ms
+Total time spent on web/webui/event_listener/main.html       --  12 ms
+Total time                                                   -- 438 ms
+build.dart finished [834 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [459 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 190 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  39 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  21 ms
+Total time spent on web/webui/complexBinding/main.html       --  19 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  34 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --  13 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  11 ms
+Total time                                                   -- 443 ms
+build.dart finished [837 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [444 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 178 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  39 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  19 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  32 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  16 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  13 ms
+Total time                                                   -- 424 ms
+build.dart finished [807 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  17 ms
+build.dart finished [422 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 176 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  28 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   8 ms
+Total time spent on web/webui/event_listener/main.html       --  10 ms
+Total time                                                   -- 408 ms
+build.dart finished [792 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [427 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 179 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  28 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  11 ms
+Total time                                                   -- 409 ms
+build.dart finished [788 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [432 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 169 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  20 ms
+Total time spent on web/webui/change_style/main.html         --  20 ms
+Total time spent on web/webui/complexBinding/main.html       --  16 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  28 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  13 ms
+Total time                                                   -- 410 ms
+build.dart finished [795 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [430 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 169 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  37 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  19 ms
+Total time spent on web/webui/conditionals/main.html         --  23 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  10 ms
+Total time                                                   -- 410 ms
+build.dart finished [808 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [436 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 174 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  24 ms
+Total time spent on web/webui/complexBinding/main.html       --  24 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"End tag (div) seen too early. Expected other end tag.","line":6,"charStart":131,"charEnd":137}}]
+Total time spent on web/webui/event_listener/main.html       --  12 ms
+Total time                                                   -- 428 ms
+build.dart finished [822 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [433 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 184 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  17 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  10 ms
+Total time                                                   -- 419 ms
+build.dart finished [812 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [443 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 180 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  33 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  36 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --  10 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"Unexpected character after attribute value.","line":6,"charStart":51,"charEnd":92}}]
+Total time spent on web/webui/event_listener/main.html       --  13 ms
+Total time                                                   -- 427 ms
+build.dart finished [813 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  21 ms
+build.dart finished [445 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 180 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+[{"method":"warning","params":{"file":"web/webui/event_listener/main.html","message":"Unexpected character after attribute value.","line":6,"charStart":51,"charEnd":92}}]
+Total time spent on web/webui/event_listener/main.html       --  15 ms
+Total time                                                   -- 417 ms
+build.dart finished [809 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [442 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 179 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  28 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  15 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time spent on web/webui/event_listener/main.html       --  13 ms
+Total time                                                   -- 414 ms
+build.dart finished [789 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [436 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 184 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  39 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  19 ms
+Total time spent on web/webui/change_style/main.html         --  16 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  16 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time spent on web/webui/event_listener/main.html       --  12 ms
+Total time                                                   -- 427 ms
+build.dart finished [807 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  20 ms
+build.dart finished [437 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 180 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  18 ms
+Total time spent on web/webui/change_style/main.html         --  15 ms
+Total time spent on web/webui/complexBinding/main.html       --  15 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  29 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  31 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   8 ms
+Total time spent on web/webui/loop/main.html                 --   6 ms
+Total time spent on web/webui/event_listener/main.html       --  14 ms
+Total time                                                   -- 413 ms
+build.dart finished [796 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [428 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 173 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  39 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  17 ms
+Total time spent on web/webui/conditionals/main.html         --  21 ms
+Total time spent on web/webui/change_style/main.html         --  26 ms
+Total time spent on web/webui/complexBinding/main.html       --  26 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  37 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --  10 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  16 ms
+Total time                                                   -- 447 ms
+build.dart finished [836 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  19 ms
+build.dart finished [431 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 168 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  19 ms
+Total time spent on web/webui/change_style/main.html         --  23 ms
+Total time spent on web/webui/complexBinding/main.html       --  20 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  34 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  33 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  16 ms
+Total time spent on web/webui/loopUsingTable/main.html       --  13 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  12 ms
+Total time                                                   -- 430 ms
+build.dart finished [809 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [434 ms]
+
+---
+build.dart --machine --changed=web/webui/event_listener/main.html
+[{"method":"mapping","params":{"from":"web/webui/inject_expression/main.html","to":"web/webui/inject_expression/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/one_way_data_binding/main.html","to":"web/webui/one_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/two_way_data_binding/main.html","to":"web/webui/two_way_data_binding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/conditionals/main.html","to":"web/webui/conditionals/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/change_style/main.html","to":"web/webui/change_style/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBinding/main.html","to":"web/webui/complexBinding/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithComposition/main.html","to":"web/webui/complexBindingWithComposition/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingPartial/main.html","to":"web/webui/complexBindingPartial/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/complexBindingWithMap/main.html","to":"web/webui/complexBindingWithMap/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loopUsingTable/main.html","to":"web/webui/loopUsingTable/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/loop/main.html","to":"web/webui/loop/out/main.html"}}]
+[{"method":"mapping","params":{"from":"web/webui/event_listener/main.html","to":"web/webui/event_listener/out/main.html"}}]
+Total time spent on web/webui/inject_expression/main.html    -- 181 ms
+Total time spent on web/webui/one_way_data_binding/main.html --  38 ms
+Total time spent on web/webui/two_way_data_binding/main.html --  16 ms
+Total time spent on web/webui/conditionals/main.html         --  22 ms
+Total time spent on web/webui/change_style/main.html         --  17 ms
+Total time spent on web/webui/complexBinding/main.html       --  16 ms
+Total time spent on web/webui/complexBindingWithComposition/main.html --  30 ms
+Total time spent on web/webui/complexBindingPartial/main.html --  32 ms
+Total time spent on web/webui/complexBindingWithMap/main.html --  14 ms
+Total time spent on web/webui/loopUsingTable/main.html       --   9 ms
+Total time spent on web/webui/loop/main.html                 --   7 ms
+Total time spent on web/webui/event_listener/main.html       --  14 ms
+Total time                                                   -- 425 ms
+build.dart finished [807 ms]
+
+---
+build.dart --machine --changed=web/webui/change_style/out/main.dart --changed=web/webui/change_style/out/main.d...
+Total time                                                   --  18 ms
+build.dart finished [424 ms]
+
