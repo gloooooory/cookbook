@@ -1,0 +1,142 @@
+= Dart Cookbook
+:author: Shailen Tuli
+:encoding: UTF-8
+
+== Futures
+
+=== Getting the value of a Future
+
+==== Problem
+
+You are using an API where a method returns a Future, and want to get that
+Future's value.
+
+==== Solution
+
+Call `then()` on the Future returned by the API method. Within
+`then()`, register a callback.  When the Future completes with a value, the
+callback fires. The Future's value is available as an argument to the callback.
+
+Here is an example:
+
+--------------------------------------------------------------------------------
+var filename = 'recipes/test/async/example.txt';
+
+new File(filename).readAsString() // Returns file contents wrapped in a Future.
+  .then((content) => doSomethingWith(content));
+--------------------------------------------------------------------------------
+
+==== Discussion
+
+Dart is a single-threaded programming language. If any code blocks the thread
+of execution, the program effectively freezes. To help keep Dart applications
+responsive, library authors use an asynchronous model when defining functions
+and methods that do potentially expensive work. Such functions and methods
+return their value using a Future.
+
+A Future represents a means for getting a value sometime in the future. When a
+Future-returning method such as `readAsString()` is invoked, two things happen:
+
+* The method queues up work to be done and returns an uncompleted Future
+object immediately. 
+
+* Later, when a value is available, the Future object completes with that value
+(or with an error).
+
+Use `then()` with a callback to get a completed Future's value.
+
+==== Chaining then() calls
+
+Calling `then()` returns a new Future. This allows `then()` calls to be chained:
+
+--------------------------------------------------------------------------------
+futureReturningFunction()
+  .then((value) => doSomethingWith(value))
+  .then((anotherValue) => doSomethingElseWith(anotherValue)
+  .then((_) ...)
+  ...
+--------------------------------------------------------------------------------
+
+==== Completing then()'s Future with a value
+
+The Future returned by `then()` completes with the value returned by `then()`'s
+callback:
+
+--------------------------------------------------------------------------------
+futureReturningFunction()
+  .then((value) => 42)            // Future completes with 42.
+  .then((value) => print(value)); // 42
+--------------------------------------------------------------------------------
+
+If `then()`'s callback itself returns a Future, that Future's value completes
+the Future returned by `then()`:
+
+--------------------------------------------------------------------------------
+futureReturningFunc().
+  .then((content) => new Future.of(() => 42)) // Callback returns 42 wrapped
+                                              // in a Future. then()'s Future
+                                              // completes with _value_ of the
+                                              // callback's Future (42).
+  .then((value) => print(value));             // 42
+--------------------------------------------------------------------------------
+
+The example below for doing File based IO uses methods that return values
+wrapped in Futures. Chaining multiple `then()` calls in this manner is very
+common in Dart code:
+
+--------------------------------------------------------------------------------
+// Program to read contents of a file and write those contents (with line
+numbers added) to a new file.
+
+import 'dart:async';
+import 'dart:io';
+
+
+String withLineNumbers(lines) {
+  var lineNumber = 0;
+  return lines.map((line) {
+    lineNumber += 1;
+    return "$lineNumber: $line";
+  }).join('\n');
+}
+
+void main() {
+  var filename = 'recipes/test/async/example.txt';
+
+  List<String> lines;
+  
+  new File(filename).readAsLines()
+      .then((_lines) {
+        lines = _lines;
+        File temp = new File('temp.txt');
+        return temp.create();
+      })
+      .then((file) => file.writeAsString(withLineNumbers(lines)))
+      .then((file) // do something with file )
+      ...
+}
+--------------------------------------------------------------------------------
+
+In the code above, potentially expensive IO operations - reading file contents,
+creating a file, and writing to a file - are all handled by methods of the File
+class that return their values through Futures. Future-returning functions and
+methods are commonplace in Dart APIs.
+
+==== Completing then()'s Future with an error
+
+Sometimes, a Future does not complete normally with a value. If code within
+`then()`'s callback throws, for example, `then()`'s Future completes with
+an error. If the error is an AsyncError, it is used directly as the error
+result. Otherwise, the original error is wrapped in an AsyncError:
+ 
+--------------------------------------------------------------------------------
+futureReturningFunction()
+  .then((value) => value ~/ 0;); // OOPS. IntegerDivisionByZeroException.
+                                 // then()'s Future completes with an
+                                 // AsyncError.
+--------------------------------------------------------------------------------
+
+If the error that completes a Future is not properly handled, it propagates to
+the global error handler. Handling errors when working with Futures is the
+subject of a separate recipe.
+
