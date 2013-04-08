@@ -1,0 +1,274 @@
+== Web UI
+
+=== Using a Dart expression inside HTML
+
+==== Problem
+
+You want to inject the value of a Dart expression in your markup.
+
+==== Solution
+
+Place the Dart expression within `{{ }}`. The Web UI framework evaluates the
+expression, and injects the result into the HTML:
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <ul>
+      <li>x = {{ x }}</li>
+      <li>{{x}} in hex is {{ x.toRadixString(16) }}</li>
+      <li>y = {{ y }}</li>
+      <li>x ~/ y = {{ x ~/ y }}</li>
+      <li>x / y = {{ (x / y).toStringAsPrecision(4) }}</li>
+    </ul>
+
+    <script type="application/dart">
+      import 'package:web_ui/web_ui.dart';
+
+      var x = 32;
+      var y = 3;
+
+      void main() {}
+    </script>
+  </body>
+</html>
+--------------------------------------------------------------------------------
+
+Building and running the above code displays the following in the browser:
+
+--------------------------------------------------------------------------------
+x = 32
+32 in hex is 20
+y = 3
+x ~/ y = 10
+x / y = 10.67
+--------------------------------------------------------------------------------
+
+The expression interpolation shown in the code above creates a _static_ binding
+between a Dart object and its representation in the UI. When the page loads,
+all expressions inside `{{ }}` are evaluated. If the value of the objects being
+evaluated changes later on, the UI does not automatically update.
+
+We will look at how we can make the binding between Dart objects and the UI
+live in other recipes in this chapter.
+
+
+=== Observing a Dart object for changes
+
+==== Problem
+
+You want to sync up an object and its display. Every time the object's value
+changes, you want its display to auto-magically change. You want this to happen
+without a page refresh, and without having to do any DOM manipulation.
+
+==== Solution
+
+Add an `@observable` declaration right before you define the object:
+
+--------------------------------------------------------------------------------
+@observable 
+var myVar;
+--------------------------------------------------------------------------------
+
+Then, put that object within double-curlies in the HTML:
+
+--------------------------------------------------------------------------------
+<li>The value is {{myVar}}</li>
+--------------------------------------------------------------------------------
+
+This create a binding between that object and its display in the UI. Every time
+the object's value changes, the UI updates automatically.
+
+==== Example
+
+Imagine you have a collection of movie quotes, and you want to display them on
+a web page one by one in slideshow fashion.
+
+Begin by creating a collection of quotes, defining a variable to store the
+current quote, and making that variable observable:
+
+--------------------------------------------------------------------------------
+class Quote {
+  String quote, saidBy; 
+  Quote(this.quote, this.saidBy);
+}
+
+List<Quote> quotes = [ ... ];
+
+@observable 
+var currentQuote;
+--------------------------------------------------------------------------------
+  
+Wrap the observable variable in double curlies in the UI to get its value:
+
+--------------------------------------------------------------------------------
+<div><em>{{ currentQuote.quote }}</em> - {{ currentQuote.saidBy }}</div>
+--------------------------------------------------------------------------------
+
+Now, write code to periodically cycle through the collection of quotes, picking a
+new quote every few seconds:
+    
+--------------------------------------------------------------------------------
+var i = 0;
+currentQuote = quotes[i];
+
+new Timer.periodic(new Duration(milliseconds:2000), (_) {
+  i = (i == quotes.length - 1) ? 0 : i + 1;
+  currentQuote = quotes[i];
+});
+--------------------------------------------------------------------------------
+
+As the quote referenced by the observable variable changes, the display on the
+page refreshes. The whole page does not refresh. And you don't have to tinker
+with the DOM.
+ 
+Here is the entire script:
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <div><em>{{ currentQuote.quote }}</em> - {{ currentQuote.saidBy }}</div>
+  
+    <script type="application/dart">
+      import 'package:web_ui/web_ui.dart';
+      import 'dart:async';
+      
+      class Quote {
+        String quote, saidBy; 
+        Quote(this.quote, this.saidBy);
+      }
+      
+      @observable 
+      var currentQuote;
+        
+      void main() {
+         List<Quote> quotes = [
+           new Quote('This agression will not stand, man.', 'The Dude'),
+           new Quote('You want a toe? I can get you a toe.', 'Walter'),
+           new Quote('The rug really tied the room together.', 'The Dude'),
+           new Quote('Mark it zero, dude', 'Walter')
+           ];
+          
+         var i = 0;
+         currentQuote = quotes[i];
+         
+         new Timer.periodic(new Duration(milliseconds: 3000), (_) {
+           i = (i == quotes.length - 1) ? 0 : i + 1;
+           currentQuote = quotes[i];
+         });
+      }
+    </script>
+  </body>
+</html>
+--------------------------------------------------------------------------------
+
+
+=== Creating a two-way binding using text elements
+
+==== Problem
+
+You are using a text field (text input or textarea) to set the value of a Dart
+object. You want that object to be modified in real time, without a page
+refresh.
+
+==== Solution
+
+First, make the object observable:
+
+--------------------------------------------------------------------------------
+@observable
+var object = value;
+--------------------------------------------------------------------------------
+
+Then, bind a text input or a textarea to that object using 'bind-value=' syntax:
+
+--------------------------------------------------------------------------------
+<input type="text" bind-value="object">
+<textarea bind-value="object"></textarea>
+--------------------------------------------------------------------------------
+
+This creates a bi-directional binding: changing the object updates the UI, and
+changing the UI updates the object.
+
+==== Example
+
+You've started micro-blogging. You have a webpage where you display one of your
+posts, along with a simple textarea to edit that post. You're restricting
+yourself to 140 characters, and want the UI to tell you how many characters
+you have remaining when you type.
+
+To enable real-time editing of a post, make the post object observable:
+
+--------------------------------------------------------------------------------
+@observable
+var post = 'This is my very first post about Dart, and the' + 
+           ' only thing I have to say is ...';
+--------------------------------------------------------------------------------
+
+Create markup to display the post and its length. Use `{{ }}` syntax for
+injecting the value of the object, and the value of the object's attributes,
+inside the HTML:
+
+--------------------------------------------------------------------------------
+<p>{{ post }}</p>
+<p><em>Post Length:</em>  {{ post.length }}</p>
+--------------------------------------------------------------------------------
+
+Then, create the binding in the textarea for editing the post (along with a
+tracker that tells you how many characters you have remaining):
+
+--------------------------------------------------------------------------------
+<textarea rows='4' cols='40' bind-value="post"></textarea>
+<p><em>Chars remaining:</em> {{ MAXLENGTH - post.length }}</p> 
+--------------------------------------------------------------------------------
+
+That's it, you're done!
+
+By sprinkling a few declarative statements in your code, you get to enjoy all
+the functionality that bi-directional binding gives you:
+
+* You need to do nothing to make the textarea sticky: it automatically contains
+the post text.
+* Modifying the post in the textarea, changes the post object in real
+time. No page refreshes, no DOM manipulation required.
+* By observing the post object, you get to observe its attributes (in this
+case, the `length` property) for free.
+
+Here is the entire script:
+
+--------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html>
+<body> 
+  <h3>Post</h3>
+  <p>{{ post }}</p>
+  <p><em>Post Length:</em>  {{ post.length }}</p>
+    
+  <p>
+    <em>Edit Post:</em><br>
+    <textarea rows='4' cols='40' bind-value="post"></textarea>
+  </p>
+  <p><em>Chars remaining:</em> {{ MAXLENGTH - post.length }}</p> 
+
+  <script type="application/dart"> 
+    import 'package:web_ui/web_ui.dart';
+
+    @observable
+    var post = 'This is my very first post about Dart, and the'
+             ' only thing I have to say is ...';
+    const num MAXLENGTH = 140;
+    
+    main() {}
+  
+  </script>
+</body>
+</html>
+--------------------------------------------------------------------------------
+
+
+

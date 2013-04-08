@@ -2,8 +2,37 @@
 
 <html>
   <body>
-    <div><em>{{ quote.quote }}</em> - {{ quote.saidBy }}</div>
+    <div><em>{{ currentQuote.quote }}</em> - {{ currentQuote.saidBy }}</div>
   
-    <script type="application/dart" src="main.dart"></script>
+    <script type="application/dart">
+      
+      import 'package:web_ui/web_ui.dart';
+      import 'dart:async';
+      
+      class Quote {
+        String quote, saidBy; 
+        Quote(this.quote, this.saidBy);
+      }
+      
+      @observable 
+      var currentQuote;
+        
+      void main() {
+        List<Quote> quotes = [
+          new Quote('This agression will not stand, man.', 'The Dude'),
+          new Quote('You are entering a world of pain', 'Walter'),
+          new Quote('The rug really tied the room together.', 'The Dude'),
+          new Quote('Mark it zero, dude', 'Walter')
+        ];
+            
+        var i = 0;
+        currentQuote = quotes[i];
+         
+        new Timer.periodic(new Duration(milliseconds: 2000), (_) {
+          i = (i == quotes.length - 1) ? 0 : i + 1;
+          currentQuote = quotes[i];
+        });
+      }   
+    </script>
   </body>
 </html>

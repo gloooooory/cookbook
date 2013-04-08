@@ -2,38 +2,21 @@
 
 <html>
   <body>
-      
-    <div>
-      There are two ways to divide numbers in Dart. Assume:
-      <ul>
-        <li>x = {{ x }}</li>
-        <li>y = {{ y }}</li>
-      </ul>
-    </div>
-    
-    <div>   
-      Integer division:
-      <ul>
-        <li>x ~/ y = {{ intDiv(x,y) }}</li>
-      </ul>
-    </div>
-      
-    <div>
-      Double division:
-      <ul>
-        <li>x / y = {{ div(x,y) }}</li>
-      </ul>
-    </div>
-    
-    <div>
-      You can write the number {{ x }} in a bunch of ways:
-      <ul>
-        <li>In binary: {{ x.toRadixString(2) }}</li>
-        <li>In octal: {{ x.toRadixString(8) }}</li>
-        <li>In hexadecimal: {{ x.toRadixString(16) }}</li>
-      </ul>
-    </div>
-    
-    <script type="application/dart" src="main.dart"></script>
+    <ul>
+      <li>x = {{ x }}</li>
+      <li>{{x}} in hex is {{ x.toRadixString(16) }}</li>
+      <li>y = {{ y }}</li>
+      <li>x ~/ y = {{ x ~/ y }}</li>
+      <li>x / y = {{ (x / y).toStringAsPrecision(4) }}</li>
+    </ul>
+
+    <script type="application/dart">
+      import 'package:web_ui/web_ui.dart';
+
+      var x = 32;
+      var y = 3;
+
+      void main() {}
+    </script>
   </body>
 </html>
