@@ -1223,7 +1223,7 @@ var jsonPerson = '{"name" : "joe", "date" : [2013, 3, 10]}';
 
 var person = json.parse(jsonPerson, (k, v) {
   if (k == "date") {
-    return new DateTime(2012, 10, 3);
+    return new DateTime(v[0], v[1], v[2]);
   }
   return v;
 });
